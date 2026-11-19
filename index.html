@@ -1,0 +1,3762 @@
+
+Let_s_Go_Shopping!_Interactive_English_Worksheet.html
+100%
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="artifact-type" content="tool">
+  <meta name="design-style" content="sticker">
+  <title>Let's Go Shopping! — Interactive English Worksheet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@1.43.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root {
+      color-scheme: light;
+
+      /* Page and surfaces (Sticker) */
+      --background: #fef7ff;
+      --surface-container-low: #ffffff;
+      --surface-container: #f8eef8;
+      --surface-container-high: #f2e8f2;
+
+      /* Ink */
+      --on-surface: #2e1a28;
+      --on-surface-variant: #604868;
+
+      /* Rules */
+      --outline: #907898;
+      --outline-variant: #dcc8e0;
+
+      /* Accents */
+      --primary: #c2207f;
+      --on-primary: #ffffff;
+      --primary-container: #f080c0;
+      --on-primary-container: #2e1a28;
+      --secondary: #7c52aa;
+      --on-secondary: #ffffff;
+      --secondary-container: #eadcf8;
+      --tertiary: #0096cc;
+      --tertiary-container: #daf2fc;
+      --error: #c53030;
+      --on-error: #ffffff;
+      --error-container: #fee2e2;
+
+      /* Data series */
+      --data-1: #c2207f;
+      --data-2: #7c52aa;
+      --data-3: #0096cc;
+      --data-4: #d96a00;
+      --data-context: #c8b8d0;
+
+      /* Semantic */
+      --positive: #157f4b;
+      --on-positive: #ffffff;
+      --positive-container: #dcfce7;
+      --warning: #b45309;
+      --warning-container: #fef3c7;
+      --focus: #c2207f;
+
+      /* Illustration tokens (used in SVGs & coloring swatches) */
+      --illus-ink: #2e1a28;
+      --illus-white: #ffffff;
+      --illus-cream: #fff8eb;
+      --illus-red: #e53935;
+      --illus-red-light: #ffcdd2;
+      --illus-yellow: #f5c518;
+      --illus-yellow-light: #fff3b0;
+      --illus-blue: #1e88e5;
+      --illus-blue-light: #bbdefb;
+      --illus-pink: #ec407a;
+      --illus-pink-light: #f8bbd0;
+      --illus-green: #43a047;
+      --illus-green-light: #c8e6c9;
+      --illus-orange: #fb8c00;
+      --illus-orange-light: #ffe0b2;
+      --illus-brown: #8d5524;
+      --illus-tan: #d9a066;
+      --illus-tan-light: #f3d5b5;
+      --illus-purple: #8e24aa;
+      --illus-purple-light: #e1bee7;
+      --illus-sky: #4fc3f7;
+      --illus-gray: #cfd8dc;
+
+      /* Fonts */
+      --font-headline: 'DM Sans', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-label: 'DM Sans', sans-serif;
+
+      /* Type scale (Focused Tool) */
+      --display-size: clamp(2rem, 1.5rem + 2.2vw, 3.1rem);
+      --headline-size: clamp(1.375rem, 1.15rem + 0.7vw, 1.75rem);
+      --subhead-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+      --body-size: clamp(1rem, 0.95rem + 0.15vw, 1.0625rem);
+      --label-size: 0.78rem;
+
+      /* Shape */
+      --rounded: 1.25rem;
+      --rounded-lg: 2rem;
+      --rounded-full: 9999px;
+
+      /* Effects */
+      --shadow-pink: 0 4px 16px rgb(224 64 160 / 0.18);
+      --shadow-pink-deep: 0 10px 28px rgb(224 64 160 / 0.30);
+      --shadow-grape: 0 4px 16px rgb(124 82 170 / 0.18);
+      --shadow-grape-deep: 0 10px 28px rgb(124 82 170 / 0.28);
+      --shadow-sky: 0 4px 16px rgb(0 150 204 / 0.18);
+      --shadow-positive: 0 4px 14px rgb(21 127 75 / 0.22);
+      --pop-scale: scale(1.03);
+      --lift: translateY(-4px);
+      --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+      /* Spacing scale (4pt base) */
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2.5rem;
+      --space-2xl: 4rem;
+
+      /* Motion */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --dur-micro: 120ms;
+      --dur-short: 220ms;
+      --dur-long: 420ms;
+    }
+
+    /* Base reset */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      overflow-x: clip;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+      color: var(--on-surface);
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    header { position: static !important; }
+    button, input, select, textarea { font-family: inherit; }
+
+    /* Focus rings */
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .page-grid {
+      display: grid;
+      gap: var(--space-lg);
+      padding: var(--space-lg);
+      max-width: 1120px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .page-grid * { min-width: 0; }
+
+    /* Typography */
+    .display {
+      font-family: var(--font-headline);
+      font-weight: 900;
+      font-size: var(--display-size);
+      letter-spacing: -0.03em;
+      line-height: 1.06;
+      color: var(--on-surface);
+      margin: 0;
+    }
+    .display em, h2 em {
+      font-style: normal;
+      color: var(--primary);
+    }
+    h2 {
+      font-family: var(--font-headline);
+      font-weight: 800;
+      font-size: var(--headline-size);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin: 0;
+      color: var(--on-surface);
+    }
+    h3 {
+      font-family: var(--font-headline);
+      font-weight: 700;
+      font-size: var(--subhead-size);
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      margin: 0;
+      color: var(--on-surface);
+    }
+    .kicker {
+      font-family: var(--font-label);
+      font-weight: 700;
+      font-size: var(--label-size);
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--on-surface-variant);
+      margin: 0;
+    }
+    .muted {
+      color: var(--on-surface-variant);
+      margin: 0;
+    }
+
+    /* Top Header Shell */
+    .app-header {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded-lg);
+      box-shadow: var(--shadow-pink);
+      padding: var(--space-md) var(--space-lg);
+      display: grid;
+      gap: var(--space-md);
+    }
+    .header-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+    }
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      background: var(--primary);
+      color: var(--on-primary);
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--rounded-full);
+      box-shadow: var(--shadow-pink);
+      border: none;
+      cursor: pointer;
+    }
+    .student-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      background: var(--surface-container);
+      color: var(--on-surface);
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--rounded-full);
+    }
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+    }
+    .level-pill-switch {
+      display: inline-flex;
+      background: var(--surface-container-high);
+      padding: 4px;
+      border-radius: var(--rounded-full);
+      gap: 4px;
+    }
+    .level-switch-btn {
+      border: none;
+      background: transparent;
+      color: var(--on-surface-variant);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--rounded-full);
+      cursor: pointer;
+      min-height: 36px;
+      transition: transform var(--dur-short) var(--ease-bounce), background-color var(--dur-short) var(--ease-out);
+    }
+    .level-switch-btn.active {
+      background: var(--primary);
+      color: var(--on-primary);
+      box-shadow: var(--shadow-pink);
+    }
+
+    /* Progress Bar Row */
+    .progress-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: var(--space-md);
+    }
+    .progress-track-wrap {
+      display: grid;
+      gap: 6px;
+    }
+    .progress-labels {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--on-surface-variant);
+    }
+    .progress-track {
+      height: 14px;
+      background: var(--surface-container-high);
+      border-radius: var(--rounded-full);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--tertiary);
+      border-radius: var(--rounded-full);
+      transition: width var(--dur-long) var(--ease-bounce);
+    }
+    .score-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--rounded-full);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    /* Activity Navigation Menu */
+    .nav-strip {
+      display: flex;
+      gap: var(--space-sm);
+      overflow-x: auto;
+      padding: var(--space-xs) 2px var(--space-sm);
+      scrollbar-width: thin;
+    }
+    .nav-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      border: 2px solid transparent;
+      background: var(--surface-container-low);
+      color: var(--on-surface-variant);
+      font-weight: 700;
+      font-size: 0.875rem;
+      padding: 10px 16px;
+      min-height: 44px;
+      border-radius: var(--rounded-full);
+      box-shadow: var(--shadow-sky);
+      cursor: pointer;
+      transition: transform var(--dur-short) var(--ease-bounce), box-shadow var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
+    }
+    .nav-pill:hover {
+      transform: var(--pop-scale);
+      color: var(--on-surface);
+    }
+    .nav-pill.active {
+      background: var(--secondary);
+      color: var(--on-secondary);
+      box-shadow: var(--shadow-grape);
+    }
+    .nav-pill.done:not(.active) {
+      background: var(--positive-container);
+      color: var(--on-surface);
+    }
+    .nav-dot {
+      width: 20px;
+      height: 20px;
+      border-radius: var(--rounded-full);
+      background: var(--surface-container-high);
+      color: var(--on-surface);
+      font-size: 0.75rem;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-pill.active .nav-dot {
+      background: var(--surface-container-low);
+      color: var(--secondary);
+    }
+    .nav-pill.done:not(.active) .nav-dot {
+      background: var(--positive);
+      color: var(--on-positive);
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-pink);
+      padding: var(--space-lg);
+    }
+    .card-sky { box-shadow: var(--shadow-sky); }
+    .card-grape { box-shadow: var(--shadow-grape); }
+    .hero-panel {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded-lg);
+      box-shadow: var(--shadow-pink-deep);
+      padding: var(--space-xl);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      border: none;
+      border-radius: var(--rounded-full);
+      padding: 12px 24px;
+      min-height: 44px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform var(--dur-short) var(--ease-bounce), box-shadow var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
+    }
+    .btn:hover:not(:disabled) { transform: var(--pop-scale); }
+    .btn:active:not(:disabled) { transform: scale(0.97); }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--on-primary);
+      box-shadow: var(--shadow-pink);
+    }
+    .btn-primary:hover:not(:disabled) { box-shadow: var(--shadow-pink-deep); }
+
+    .btn-secondary {
+      background: var(--secondary);
+      color: var(--on-secondary);
+      box-shadow: var(--shadow-grape);
+    }
+    .btn-secondary:hover:not(:disabled) { box-shadow: var(--shadow-grape-deep); }
+
+    .btn-positive {
+      background: var(--positive);
+      color: var(--on-positive);
+      box-shadow: var(--shadow-positive);
+    }
+
+    .btn-soft {
+      background: var(--surface-container);
+      color: var(--on-surface);
+      box-shadow: none;
+    }
+    .btn-soft:hover:not(:disabled) {
+      background: var(--surface-container-high);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--primary);
+      padding: 8px 14px;
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      min-height: 40px;
+      font-size: 0.875rem;
+    }
+
+    /* Badges & Tags */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 6px 14px;
+      border-radius: var(--rounded-full);
+    }
+    .badge-grape {
+      background: var(--secondary-container);
+      color: var(--on-surface);
+    }
+    .badge-sky {
+      background: var(--tertiary-container);
+      color: var(--on-surface);
+    }
+    .badge-positive {
+      background: var(--positive-container);
+      color: var(--on-surface);
+    }
+
+    /* Form Controls */
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+    .field label {
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: var(--on-surface);
+      padding-left: 8px;
+    }
+    .pill-input {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 18px;
+      border-radius: var(--rounded-full);
+      border: 2px solid var(--outline);
+      background: var(--surface-container);
+      color: var(--on-surface);
+      font-size: 1rem;
+      font-weight: 600;
+      transition: border-color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
+    }
+    .pill-input:focus {
+      outline: none;
+      border-color: var(--primary);
+      background: var(--surface-container-low);
+      box-shadow: 0 0 0 3px rgb(194 32 127 / 0.16);
+    }
+    .pill-input.is-correct {
+      border-color: var(--positive);
+      background: var(--positive-container);
+    }
+    .pill-input.is-wrong {
+      border-color: var(--error);
+      background: var(--error-container);
+    }
+
+    /* Welcome Layout */
+    .welcome-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: var(--space-xl);
+      align-items: center;
+    }
+    .welcome-form-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-md);
+      margin-top: var(--space-lg);
+    }
+    .level-choices {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-md);
+      margin-top: var(--space-lg);
+    }
+    .level-card-btn {
+      display: grid;
+      gap: var(--space-xs);
+      text-align: left;
+      padding: var(--space-lg);
+      border-radius: var(--rounded);
+      border: 3px solid transparent;
+      cursor: pointer;
+      min-height: 44px;
+      transition: transform var(--dur-short) var(--ease-bounce), box-shadow var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out);
+    }
+    .level-card-btn:hover { transform: var(--lift); }
+    .level-card-btn.tk {
+      background: var(--primary);
+      color: var(--on-primary);
+      box-shadow: var(--shadow-pink-deep);
+    }
+    .level-card-btn.sd {
+      background: var(--secondary);
+      color: var(--on-secondary);
+      box-shadow: var(--shadow-grape-deep);
+    }
+    .level-card-btn.selected {
+      border-color: var(--on-surface);
+    }
+    .level-card-title {
+      font-size: 1.2rem;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+    }
+    .level-card-sub {
+      font-size: 0.88rem;
+      opacity: 0.92;
+      font-weight: 500;
+    }
+
+    /* Activity Stage Header */
+    .activity-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+    }
+    .activity-title-group {
+      display: grid;
+      gap: var(--space-xs);
+    }
+    .instruction-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      background: var(--tertiary-container);
+      color: var(--on-surface);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--rounded-full);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive Card Grids */
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+      gap: var(--space-lg);
+    }
+    .vocab-card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-pink);
+      padding: var(--space-lg);
+      display: grid;
+      justify-items: center;
+      gap: var(--space-sm);
+      text-align: center;
+      cursor: pointer;
+      border: 3px solid transparent;
+      transition: transform var(--dur-short) var(--ease-bounce), box-shadow var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out);
+    }
+    .vocab-card:nth-child(3n+2) { box-shadow: var(--shadow-sky); }
+    .vocab-card:nth-child(3n+3) { box-shadow: var(--shadow-grape); }
+    .vocab-card:hover { transform: var(--lift); }
+    .vocab-card.practiced {
+      border-color: var(--positive);
+      background: var(--positive-container);
+    }
+    .vocab-word {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--on-surface);
+    }
+
+    /* Matching Columns (Drag + Tap) */
+    .match-board {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-xl);
+      align-items: start;
+    }
+    .match-col {
+      display: grid;
+      gap: var(--space-md);
+    }
+    .match-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      padding: var(--space-md);
+      min-height: 76px;
+      border: 3px solid transparent;
+      box-shadow: var(--shadow-pink);
+      cursor: pointer;
+      transition: transform var(--dur-short) var(--ease-bounce), border-color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
+    }
+    .match-item:hover { transform: var(--pop-scale); }
+    .match-item.selected {
+      border-color: var(--primary);
+      background: var(--surface-container);
+    }
+    .match-item.matched-ok {
+      border-color: var(--positive);
+      background: var(--positive-container);
+    }
+    .match-item.matched-bad {
+      border-color: var(--error);
+      background: var(--error-container);
+    }
+    .match-target {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      background: var(--surface-container);
+      border: 3px dashed var(--outline);
+      border-radius: var(--rounded);
+      padding: var(--space-md);
+      min-height: 76px;
+      cursor: pointer;
+      transition: transform var(--dur-short) var(--ease-bounce), border-color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
+    }
+    .match-target.drag-over {
+      border-color: var(--primary);
+      background: var(--primary-container);
+      transform: var(--pop-scale);
+    }
+    .match-target.has-pair {
+      border-style: solid;
+      border-color: var(--secondary);
+      background: var(--surface-container-low);
+      box-shadow: var(--shadow-grape);
+    }
+    .match-target.matched-ok {
+      border-style: solid;
+      border-color: var(--positive);
+      background: var(--positive-container);
+    }
+    .match-target.matched-bad {
+      border-style: solid;
+      border-color: var(--error);
+      background: var(--error-container);
+    }
+
+    /* Picture Quiz (TK Activity 3) */
+    .quiz-block {
+      display: grid;
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+    }
+    .picture-options {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-md);
+    }
+    .picture-choice {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-sky);
+      padding: var(--space-lg);
+      border: 4px solid transparent;
+      display: grid;
+      justify-items: center;
+      gap: var(--space-sm);
+      cursor: pointer;
+      transition: transform var(--dur-short) var(--ease-bounce), border-color var(--dur-short) var(--ease-out);
+    }
+    .picture-choice:hover { transform: var(--lift); }
+    .picture-choice.circled {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-pink-deep);
+    }
+    .picture-choice.correct {
+      border-color: var(--positive);
+      background: var(--positive-container);
+    }
+    .picture-choice.wrong {
+      border-color: var(--error);
+      background: var(--error-container);
+    }
+
+    /* Digital Coloring (TK Activity 4) */
+    .palette-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+      background: var(--surface-container);
+      padding: var(--space-md);
+      border-radius: var(--rounded);
+      margin-bottom: var(--space-lg);
+    }
+    .swatch-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 8px 18px;
+      min-height: 44px;
+      border-radius: var(--rounded-full);
+      border: 3px solid transparent;
+      background: var(--surface-container-low);
+      color: var(--on-surface);
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform var(--dur-short) var(--ease-bounce), border-color var(--dur-short) var(--ease-out);
+    }
+    .swatch-btn:hover { transform: var(--pop-scale); }
+    .swatch-btn.active {
+      border-color: var(--on-surface);
+      box-shadow: var(--shadow-pink);
+    }
+    .swatch-dot {
+      width: 22px;
+      height: 22px;
+      border-radius: var(--rounded-full);
+      border: 2px solid var(--on-surface);
+    }
+    .swatch-red { background: var(--illus-red); }
+    .swatch-yellow { background: var(--illus-yellow); }
+    .swatch-blue { background: var(--illus-blue); }
+    .swatch-pink { background: var(--illus-pink); }
+    .swatch-none { background: var(--illus-white); }
+
+    .coloring-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+      gap: var(--space-lg);
+    }
+    .coloring-card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-grape);
+      padding: var(--space-lg);
+      display: grid;
+      justify-items: center;
+      gap: var(--space-sm);
+      cursor: pointer;
+      border: 3px solid transparent;
+      text-align: center;
+      transition: transform var(--dur-short) var(--ease-bounce), border-color var(--dur-short) var(--ease-out);
+    }
+    .coloring-card:hover { transform: var(--lift); }
+    .coloring-card.done-ok { border-color: var(--positive); }
+    .coloring-card.done-hint { border-color: var(--warning); }
+
+    /* Speaking Practice & Dialogue */
+    .dialogue-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+      gap: var(--space-lg);
+    }
+    .speak-card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-pink);
+      padding: var(--space-lg);
+      display: grid;
+      gap: var(--space-md);
+      border: 3px solid transparent;
+    }
+    .speak-card.practiced { border-color: var(--positive); }
+    .bubble {
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--rounded);
+      font-weight: 600;
+    }
+    .bubble-teacher {
+      background: var(--secondary-container);
+      color: var(--on-surface);
+    }
+    .bubble-student {
+      background: var(--tertiary-container);
+      color: var(--on-surface);
+    }
+    .bubble-active {
+      outline: 3px solid var(--primary);
+      box-shadow: var(--shadow-pink);
+    }
+
+    /* Word Bank & Sentences */
+    .word-bank {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      background: var(--surface-container);
+      padding: var(--space-md);
+      border-radius: var(--rounded);
+      margin-bottom: var(--space-lg);
+      align-items: center;
+    }
+    .word-chip {
+      border: 2px solid var(--outline);
+      background: var(--surface-container-low);
+      color: var(--on-surface);
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 8px 16px;
+      min-height: 40px;
+      border-radius: var(--rounded-full);
+      cursor: pointer;
+      transition: transform var(--dur-short) var(--ease-bounce), background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out);
+    }
+    .word-chip:hover:not(:disabled) {
+      transform: var(--pop-scale);
+      border-color: var(--primary);
+    }
+    .word-chip.selected {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+    .word-chip:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .store-id-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
+      gap: var(--space-lg);
+    }
+    .store-id-card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-sky);
+      padding: var(--space-lg);
+      display: grid;
+      gap: var(--space-md);
+      justify-items: center;
+    }
+    .store-id-card .field { width: 100%; }
+
+    .sentence-list {
+      display: grid;
+      gap: var(--space-md);
+    }
+    .sentence-row {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-grape);
+      padding: var(--space-md) var(--space-lg);
+      display: grid;
+      gap: var(--space-sm);
+    }
+    .sentence-inline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .blank-input {
+      min-width: 170px;
+      max-width: 240px;
+      display: inline-block;
+    }
+
+    /* Reading Comprehension (SD Activity 4) */
+    .reading-card {
+      background: var(--surface-container);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-xl);
+      margin-bottom: var(--space-lg);
+      display: grid;
+      gap: var(--space-md);
+    }
+    .reading-text {
+      font-size: 1.125rem;
+      line-height: 1.75;
+      color: var(--on-surface);
+      max-width: 65ch;
+      margin: 0;
+    }
+    .mcq-list {
+      display: grid;
+      gap: var(--space-lg);
+    }
+    .mcq-card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-pink);
+      padding: var(--space-lg);
+      display: grid;
+      gap: var(--space-md);
+    }
+    .mcq-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+      gap: var(--space-sm);
+    }
+    .mcq-btn {
+      text-align: left;
+      padding: 12px 16px;
+      min-height: 44px;
+      border-radius: var(--rounded);
+      border: 2px solid var(--outline-variant);
+      background: var(--surface-container);
+      color: var(--on-surface);
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform var(--dur-short) var(--ease-bounce), border-color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
+    }
+    .mcq-btn:hover { transform: var(--pop-scale); border-color: var(--secondary); }
+    .mcq-btn.selected {
+      background: var(--secondary);
+      color: var(--on-secondary);
+      border-color: var(--secondary);
+    }
+    .mcq-btn.correct {
+      background: var(--positive-container);
+      color: var(--on-surface);
+      border-color: var(--positive);
+    }
+    .mcq-btn.wrong {
+      background: var(--error-container);
+      color: var(--on-surface);
+      border-color: var(--error);
+    }
+
+    /* Arrange Words (SD Activity 5) */
+    .arrange-card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-sky);
+      padding: var(--space-lg);
+      display: grid;
+      gap: var(--space-md);
+    }
+    .arrange-tray {
+      min-height: 58px;
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--rounded);
+      background: var(--surface-container);
+      border: 2px dashed var(--outline);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    .arrange-tray.is-correct {
+      border-style: solid;
+      border-color: var(--positive);
+      background: var(--positive-container);
+    }
+    .arrange-tray.is-wrong {
+      border-style: solid;
+      border-color: var(--error);
+      background: var(--error-container);
+    }
+    .tile-pool {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+    }
+
+    /* Dialogue Completion (SD Activity 6) */
+    .dialogue-stage {
+      display: grid;
+      grid-template-columns: 0.7fr 1.3fr;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+    .dialogue-lines {
+      display: grid;
+      gap: var(--space-sm);
+    }
+    .dialogue-line {
+      padding: var(--space-md);
+      border-radius: var(--rounded);
+      background: var(--surface-container);
+      display: grid;
+      gap: 4px;
+      transition: transform var(--dur-short) var(--ease-bounce), box-shadow var(--dur-short) var(--ease-out);
+    }
+    .dialogue-line.shopkeeper { background: var(--secondary-container); }
+    .dialogue-line.customer { background: var(--tertiary-container); }
+    .dialogue-line.speaking-now {
+      outline: 3px solid var(--primary);
+      transform: var(--pop-scale);
+      box-shadow: var(--shadow-pink);
+    }
+    .blank-slot-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 160px;
+      min-height: 40px;
+      padding: 4px 14px;
+      border-radius: var(--rounded-full);
+      border: 2px dashed var(--primary);
+      background: var(--surface-container-low);
+      color: var(--on-surface);
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .blank-slot-btn.filled {
+      border-style: solid;
+      background: var(--primary-container);
+    }
+
+    /* Shopping List (SD Activity 7) */
+    .list-builder-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+    }
+    .list-cat-card {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-grape);
+      padding: var(--space-md);
+      display: grid;
+      gap: var(--space-sm);
+    }
+    .mini-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .mini-chip {
+      border: 1.5px solid var(--outline);
+      background: var(--surface-container);
+      color: var(--on-surface);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      min-height: 36px;
+      border-radius: var(--rounded-full);
+      cursor: pointer;
+    }
+    .mini-chip.active {
+      background: var(--secondary);
+      color: var(--on-secondary);
+      border-color: var(--secondary);
+    }
+
+    /* Part C: Mini Shopping Challenge */
+    .sim-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--space-lg);
+      align-items: start;
+    }
+    .store-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+    }
+    .shelf-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(130px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+    .product-tile {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-sky);
+      padding: var(--space-md);
+      display: grid;
+      justify-items: center;
+      gap: 6px;
+      border: 3px solid transparent;
+      cursor: pointer;
+      text-align: center;
+      transition: transform var(--dur-short) var(--ease-bounce), border-color var(--dur-short) var(--ease-out);
+    }
+    .product-tile:hover { transform: var(--lift); }
+    .product-tile.in-basket {
+      border-color: var(--primary);
+      background: var(--surface-container);
+    }
+    .chat-log {
+      display: grid;
+      gap: var(--space-sm);
+      max-height: 260px;
+      overflow-y: auto;
+      padding: var(--space-md);
+      background: var(--surface-container);
+      border-radius: var(--rounded);
+    }
+    .prompt-group {
+      display: grid;
+      gap: var(--space-xs);
+    }
+    .prompt-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    /* Results Page */
+    .results-hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr));
+      gap: var(--space-md);
+      margin: var(--space-lg) 0;
+    }
+    .metric-tile {
+      background: var(--surface-container-low);
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow-pink);
+      padding: var(--space-lg);
+      display: grid;
+      gap: 4px;
+    }
+    .metric-tile:nth-child(2) { box-shadow: var(--shadow-sky); }
+    .metric-tile:nth-child(3) { box-shadow: var(--shadow-grape); }
+    .metric-value {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--primary);
+      font-variant-numeric: tabular-nums;
+      line-height: 1.1;
+    }
+    .breakdown-list {
+      display: grid;
+      gap: var(--space-sm);
+    }
+    .breakdown-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-sm);
+      background: var(--surface-container);
+      padding: var(--space-md) var(--space-lg);
+      border-radius: var(--rounded);
+    }
+
+    /* Feedback & Footer Actions */
+    .feedback-box {
+      padding: var(--space-md) var(--space-lg);
+      border-radius: var(--rounded);
+      font-weight: 700;
+      margin-top: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    .feedback-box.ok {
+      background: var(--positive-container);
+      color: var(--on-surface);
+    }
+    .feedback-box.warn {
+      background: var(--warning-container);
+      color: var(--on-surface);
+    }
+    .feedback-box.err {
+      background: var(--error-container);
+      color: var(--on-surface);
+    }
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      align-items: center;
+      margin-top: var(--space-lg);
+    }
+    .stage-footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+      padding-top: var(--space-lg);
+      border-top: 2px solid var(--outline-variant);
+    }
+
+    .hidden { display: none !important; }
+
+    /* Container queries for adaptive split cards */
+    .card-wrapper { container-type: inline-size; }
+    @container (max-width: 520px) {
+      .dialogue-stage { grid-template-columns: 1fr; }
+    }
+
+    /* Mobile breakpoint */
+    @media (max-width: 640px) {
+      .page-grid {
+        padding: var(--space-sm);
+        gap: var(--space-md);
+      }
+      .hero-panel { padding: var(--space-lg); }
+      .welcome-grid,
+      .welcome-form-row,
+      .level-choices,
+      .match-board,
+      .picture-options,
+      .dialogue-stage,
+      .sim-layout {
+        grid-template-columns: 1fr;
+      }
+      .progress-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-grid">
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="brand-group">
+          <button type="button" class="brand-pill" onclick="goToView('welcome')">
+            <i data-lucide="shopping-bag" aria-hidden="true"></i>
+            <span>Let's Go Shopping!</span>
+          </button>
+          <span id="student-badge" class="student-badge">Little Shopper</span>
+        </div>
+
+        <div class="header-controls">
+          <div class="level-pill-switch" role="group" aria-label="Learning Level">
+            <button type="button" id="switch-tk" class="level-switch-btn" onclick="selectLevel('tk', false)">TK</button>
+            <button type="button" id="switch-sd" class="level-switch-btn" onclick="selectLevel('sd', false)">SD</button>
+          </div>
+          <button type="button" id="sound-toggle-btn" class="btn btn-soft btn-sm" onclick="toggleSound()">
+            <i data-lucide="volume-2" aria-hidden="true"></i>
+            <span id="sound-toggle-label">Voice: On</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="progress-row">
+        <div class="progress-track-wrap">
+          <div class="progress-labels">
+            <span id="progress-text">0 / 6 Activities Completed</span>
+            <span id="progress-pct">0%</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar-aria">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
+        <div class="score-pill" id="header-score-pill">
+          <i data-lucide="star" aria-hidden="true"></i>
+          <span id="header-score-text">Score: 0</span>
+        </div>
+      </div>
+
+      <nav class="nav-strip" id="nav-strip" aria-label="Worksheet Activities"></nav>
+    </header>
+
+    <!-- Main Interactive Stage -->
+    <main id="stage-root"></main>
+  </div>
+
+  <api-shim></api-shim>
+  <script>
+    /* ======================================================================
+       1. SVG CARTOON ILLUSTRATION LIBRARY (All colors from CSS tokens)
+       ====================================================================== */
+    function svgWrapper(inner, size) {
+      const s = size || 96;
+      return `<svg xmlns="http://www.w3.org/2000/svg" width="${s}" height="${s}" viewBox="0 0 120 120" aria-hidden="true">${inner}</svg>`;
+    }
+
+    function getProductSvg(key, size, customFill) {
+      const fillOverride = customFill || '';
+      switch (key) {
+        case 'bread':
+          return svgWrapper(`
+            <ellipse cx="60" cy="76" rx="44" ry="22" fill="var(--illus-tan)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <path d="M22 72 C22 40, 98 40, 98 72 Z" fill="var(--illus-brown)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <path d="M40 52 L48 64 M60 48 L64 62 M80 52 L76 64" stroke="var(--illus-cream)" stroke-width="4" stroke-linecap="round"/>
+          `, size);
+        case 'teddy':
+          return svgWrapper(`
+            <circle cx="34" cy="34" r="13" fill="var(--illus-brown)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <circle cx="86" cy="34" r="13" fill="var(--illus-brown)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <circle cx="34" cy="34" r="6" fill="var(--illus-tan-light)"/>
+            <circle cx="86" cy="34" r="6" fill="var(--illus-tan-light)"/>
+            <ellipse cx="60" cy="86" rx="28" ry="24" fill="var(--illus-brown)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <ellipse cx="60" cy="88" rx="16" ry="15" fill="var(--illus-tan-light)"/>
+            <circle cx="60" cy="50" r="26" fill="var(--illus-brown)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <ellipse cx="60" cy="58" rx="13" ry="10" fill="var(--illus-tan-light)"/>
+            <circle cx="50" cy="44" r="3.5" fill="var(--illus-ink)"/>
+            <circle cx="70" cy="44" r="3.5" fill="var(--illus-ink)"/>
+            <ellipse cx="60" cy="54" rx="5" ry="3.5" fill="var(--illus-ink)"/>
+            <path d="M54 62 Q60 67 66 62" fill="none" stroke="var(--illus-ink)" stroke-width="3" stroke-linecap="round"/>
+          `, size);
+        case 'book':
+          return svgWrapper(`
+            <rect x="24" y="24" width="72" height="74" rx="10" fill="var(--illus-blue)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <rect x="24" y="24" width="16" height="74" rx="6" fill="var(--illus-purple)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <rect x="48" y="38" width="38" height="22" rx="5" fill="var(--illus-yellow-light)" stroke="var(--illus-ink)" stroke-width="3"/>
+            <line x1="50" y1="74" x2="84" y2="74" stroke="var(--illus-white)" stroke-width="4" stroke-linecap="round"/>
+            <line x1="50" y1="84" x2="76" y2="84" stroke="var(--illus-white)" stroke-width="4" stroke-linecap="round"/>
+          `, size);
+        case 'apple':
+          return svgWrapper(`
+            <path d="M60 34 C46 24, 24 34, 26 62 C28 90, 48 98, 60 94 C72 98, 92 90, 94 62 C96 34, 74 24, 60 34 Z" fill="${fillOverride || 'var(--illus-red)'}" stroke="var(--illus-ink)" stroke-width="4"/>
+            <path d="M60 34 Q60 18 68 14" fill="none" stroke="var(--illus-brown)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M62 24 C74 14, 86 22, 78 32 C72 34, 64 30, 62 24 Z" fill="${fillOverride ? fillOverride : 'var(--illus-green)'}" stroke="var(--illus-ink)" stroke-width="3"/>
+            <path d="M40 48 Q36 58 40 66" fill="none" stroke="var(--illus-white)" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+          `, size);
+        case 'shirt':
+          return svgWrapper(`
+            <path d="M36 26 L48 26 Q60 36 72 26 L84 26 L104 44 L92 60 L82 52 L82 96 L38 96 L38 52 L28 60 L16 44 Z" fill="${fillOverride || 'var(--illus-blue)'}" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M48 26 Q60 38 72 26" fill="none" stroke="var(--illus-ink)" stroke-width="3.5"/>
+          `, size);
+        case 'flower':
+          return svgWrapper(`
+            <path d="M60 66 L60 104" stroke="${fillOverride ? 'var(--illus-ink)' : 'var(--illus-green)'}" stroke-width="6" stroke-linecap="round"/>
+            <path d="M60 88 Q76 76 80 86 Q72 96 60 88 Z" fill="${fillOverride || 'var(--illus-green)'}" stroke="var(--illus-ink)" stroke-width="3"/>
+            <circle cx="60" cy="30" r="14" fill="${fillOverride || 'var(--illus-pink)'}" stroke="var(--illus-ink)" stroke-width="3.5"/>
+            <circle cx="80" cy="45" r="14" fill="${fillOverride || 'var(--illus-pink)'}" stroke="var(--illus-ink)" stroke-width="3.5"/>
+            <circle cx="72" cy="68" r="14" fill="${fillOverride || 'var(--illus-pink)'}" stroke="var(--illus-ink)" stroke-width="3.5"/>
+            <circle cx="48" cy="68" r="14" fill="${fillOverride || 'var(--illus-pink)'}" stroke="var(--illus-ink)" stroke-width="3.5"/>
+            <circle cx="40" cy="45" r="14" fill="${fillOverride || 'var(--illus-pink)'}" stroke="var(--illus-ink)" stroke-width="3.5"/>
+            <circle cx="60" cy="50" r="13" fill="${fillOverride || 'var(--illus-yellow)'}" stroke="var(--illus-ink)" stroke-width="3.5"/>
+          `, size);
+        case 'banana':
+          return svgWrapper(`
+            <path d="M26 78 C46 94, 86 80, 94 34 C96 26, 86 24, 82 32 C74 62, 48 74, 28 66 C20 64, 18 72, 26 78 Z" fill="${fillOverride || 'var(--illus-yellow)'}" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M88 28 L94 22" stroke="var(--illus-brown)" stroke-width="5" stroke-linecap="round"/>
+          `, size);
+        case 'toycar':
+          return svgWrapper(`
+            <path d="M22 68 L30 44 C32 38, 40 36, 48 36 L72 36 C80 36, 86 42, 90 52 L100 58 C104 60, 104 76, 98 76 L22 76 C16 76, 16 68, 22 68 Z" fill="var(--illus-red)" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M36 52 L42 42 L74 42 L82 52 Z" fill="var(--illus-sky)" stroke="var(--illus-ink)" stroke-width="3"/>
+            <circle cx="38" cy="80" r="12" fill="var(--illus-ink)"/>
+            <circle cx="38" cy="80" r="5" fill="var(--illus-gray)"/>
+            <circle cx="82" cy="80" r="12" fill="var(--illus-ink)"/>
+            <circle cx="82" cy="80" r="5" fill="var(--illus-gray)"/>
+          `, size);
+        case 'pencil':
+          return svgWrapper(`
+            <g transform="rotate(-35 60 60)">
+              <rect x="48" y="22" width="24" height="66" rx="4" fill="var(--illus-yellow)" stroke="var(--illus-ink)" stroke-width="4"/>
+              <rect x="48" y="22" width="24" height="14" rx="4" fill="var(--illus-pink)" stroke="var(--illus-ink)" stroke-width="4"/>
+              <polygon points="48,88 72,88 60,108" fill="var(--illus-tan-light)" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+              <polygon points="56,100 64,100 60,108" fill="var(--illus-ink)"/>
+            </g>
+          `, size);
+        case 'cake':
+          return svgWrapper(`
+            <rect x="24" y="64" width="72" height="32" rx="8" fill="var(--illus-pink-light)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <rect x="34" y="42" width="52" height="24" rx="6" fill="var(--illus-cream)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <path d="M34 48 Q44 58 54 48 Q64 58 74 48 Q80 54 86 48" fill="none" stroke="var(--illus-pink)" stroke-width="5" stroke-linecap="round"/>
+            <rect x="57" y="24" width="6" height="18" fill="var(--illus-sky)" stroke="var(--illus-ink)" stroke-width="2.5"/>
+            <path d="M60 12 Q66 20 60 24 Q54 20 60 12 Z" fill="var(--illus-orange)" stroke="var(--illus-ink)" stroke-width="2"/>
+          `, size);
+        case 'notebook':
+          return svgWrapper(`
+            <rect x="30" y="20" width="64" height="80" rx="8" fill="var(--illus-orange-light)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <rect x="44" y="34" width="38" height="16" rx="4" fill="var(--illus-white)" stroke="var(--illus-ink)" stroke-width="3"/>
+            <circle cx="28" cy="34" r="5" fill="var(--illus-purple)" stroke="var(--illus-ink)" stroke-width="3"/>
+            <circle cx="28" cy="52" r="5" fill="var(--illus-purple)" stroke="var(--illus-ink)" stroke-width="3"/>
+            <circle cx="28" cy="70" r="5" fill="var(--illus-purple)" stroke="var(--illus-ink)" stroke-width="3"/>
+            <circle cx="28" cy="88" r="5" fill="var(--illus-purple)" stroke="var(--illus-ink)" stroke-width="3"/>
+          `, size);
+        case 'catfood':
+          return svgWrapper(`
+            <rect x="28" y="34" width="64" height="66" rx="10" fill="var(--illus-orange)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <rect x="36" y="48" width="48" height="36" rx="8" fill="var(--illus-cream)" stroke="var(--illus-ink)" stroke-width="3"/>
+            <circle cx="60" cy="66" r="11" fill="var(--illus-tan)" stroke="var(--illus-ink)" stroke-width="2.5"/>
+            <polygon points="49,58 53,48 59,56" fill="var(--illus-tan)" stroke="var(--illus-ink)" stroke-width="2.5"/>
+            <polygon points="71,58 67,48 61,56" fill="var(--illus-tan)" stroke="var(--illus-ink)" stroke-width="2.5"/>
+            <ellipse cx="60" cy="34" rx="32" ry="8" fill="var(--illus-gray)" stroke="var(--illus-ink)" stroke-width="4"/>
+          `, size);
+        case 'shoes':
+          return svgWrapper(`
+            <path d="M20 74 L30 46 L52 46 L62 66 L96 72 C102 74, 102 88, 94 88 L22 88 C16 88, 16 78, 20 74 Z" fill="var(--illus-purple)" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+            <rect x="18" y="84" width="80" height="10" rx="5" fill="var(--illus-white)" stroke="var(--illus-ink)" stroke-width="3.5"/>
+            <line x1="48" y1="56" x2="58" y2="54" stroke="var(--illus-white)" stroke-width="3.5" stroke-linecap="round"/>
+            <line x1="53" y1="64" x2="63" y2="62" stroke="var(--illus-white)" stroke-width="3.5" stroke-linecap="round"/>
+          `, size);
+        case 'milk':
+          return svgWrapper(`
+            <polygon points="36,36 84,36 74,20 46,20" fill="var(--illus-sky)" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+            <rect x="36" y="36" width="48" height="64" rx="6" fill="var(--illus-white)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <rect x="36" y="54" width="48" height="24" fill="var(--illus-blue-light)" stroke="var(--illus-ink)" stroke-width="3"/>
+            <circle cx="60" cy="66" r="7" fill="var(--illus-blue)"/>
+          `, size);
+        case 'donut':
+          return svgWrapper(`
+            <circle cx="60" cy="60" r="36" fill="var(--illus-tan)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <path d="M26 56 C30 30, 90 30, 94 56 C86 64, 74 56, 60 62 C46 56, 34 64, 26 56 Z" fill="var(--illus-pink)" stroke="var(--illus-ink)" stroke-width="3.5"/>
+            <circle cx="60" cy="60" r="12" fill="var(--illus-cream)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <line x1="44" y1="42" x2="50" y2="46" stroke="var(--illus-yellow)" stroke-width="4" stroke-linecap="round"/>
+            <line x1="72" y1="40" x2="78" y2="44" stroke="var(--illus-sky)" stroke-width="4" stroke-linecap="round"/>
+            <line x1="60" y1="36" x2="62" y2="42" stroke="var(--illus-white)" stroke-width="4" stroke-linecap="round"/>
+          `, size);
+        case 'doll':
+          return svgWrapper(`
+            <circle cx="60" cy="38" r="18" fill="var(--illus-tan-light)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <path d="M42 36 C42 18, 78 18, 78 36" fill="var(--illus-brown)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <polygon points="44,58 76,58 88,96 32,96" fill="var(--illus-pink)" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+            <circle cx="53" cy="38" r="3" fill="var(--illus-ink)"/>
+            <circle cx="67" cy="38" r="3" fill="var(--illus-ink)"/>
+            <path d="M55 46 Q60 50 65 46" fill="none" stroke="var(--illus-ink)" stroke-width="3" stroke-linecap="round"/>
+          `, size);
+        case 'ball':
+          return svgWrapper(`
+            <circle cx="60" cy="60" r="36" fill="var(--illus-yellow)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <path d="M34 34 Q60 60 34 86" fill="none" stroke="var(--illus-red)" stroke-width="8"/>
+            <path d="M86 34 Q60 60 86 86" fill="none" stroke="var(--illus-blue)" stroke-width="8"/>
+            <circle cx="60" cy="60" r="36" fill="none" stroke="var(--illus-ink)" stroke-width="4"/>
+          `, size);
+        case 'hat':
+          return svgWrapper(`
+            <path d="M32 70 C32 40, 88 40, 88 70 Z" fill="var(--illus-green)" stroke="var(--illus-ink)" stroke-width="4"/>
+            <ellipse cx="60" cy="72" rx="44" ry="10" fill="var(--illus-yellow)" stroke="var(--illus-ink)" stroke-width="4"/>
+          `, size);
+        default:
+          return svgWrapper(`<circle cx="60" cy="60" r="34" fill="var(--illus-pink-light)" stroke="var(--illus-ink)" stroke-width="4"/>`, size);
+      }
+    }
+
+    function getStoreSvg(key, size) {
+      let awningA = 'var(--illus-pink)', awningB = 'var(--illus-cream)', bodyFill = 'var(--illus-orange-light)', signFill = 'var(--illus-brown)', iconInner = '';
+      if (key === 'bakery') {
+        awningA = 'var(--illus-pink)'; awningB = 'var(--illus-cream)'; bodyFill = 'var(--illus-yellow-light)'; signFill = 'var(--illus-brown)';
+        iconInner = `<ellipse cx="60" cy="84" rx="16" ry="9" fill="var(--illus-tan)" stroke="var(--illus-ink)" stroke-width="3"/><path d="M46 84 C46 72, 74 72, 74 84 Z" fill="var(--illus-brown)" stroke="var(--illus-ink)" stroke-width="3"/>`;
+      } else if (key === 'bookstore') {
+        awningA = 'var(--illus-blue)'; awningB = 'var(--illus-white)'; bodyFill = 'var(--illus-blue-light)'; signFill = 'var(--illus-purple)';
+        iconInner = `<rect x="46" y="70" width="28" height="22" rx="4" fill="var(--illus-blue)" stroke="var(--illus-ink)" stroke-width="3"/><line x1="60" y1="70" x2="60" y2="92" stroke="var(--illus-white)" stroke-width="3"/>`;
+      } else if (key === 'toystore') {
+        awningA = 'var(--illus-purple)'; awningB = 'var(--illus-yellow)'; bodyFill = 'var(--illus-pink-light)'; signFill = 'var(--illus-red)';
+        iconInner = `<circle cx="60" cy="80" r="12" fill="var(--illus-yellow)" stroke="var(--illus-ink)" stroke-width="3"/><circle cx="55" cy="77" r="2.5" fill="var(--illus-ink)"/><circle cx="65" cy="77" r="2.5" fill="var(--illus-ink)"/>`;
+      } else if (key === 'fruitstore') {
+        awningA = 'var(--illus-green)'; awningB = 'var(--illus-yellow)'; bodyFill = 'var(--illus-green-light)'; signFill = 'var(--illus-green)';
+        iconInner = `<circle cx="60" cy="82" r="11" fill="var(--illus-red)" stroke="var(--illus-ink)" stroke-width="3"/><path d="M60 71 L64 64" stroke="var(--illus-brown)" stroke-width="3" stroke-linecap="round"/>`;
+      } else if (key === 'petshop') {
+        awningA = 'var(--illus-orange)'; awningB = 'var(--illus-cream)'; bodyFill = 'var(--illus-orange-light)'; signFill = 'var(--illus-orange)';
+        iconInner = `<circle cx="60" cy="84" r="8" fill="var(--illus-brown)"/><circle cx="50" cy="74" r="4" fill="var(--illus-brown)"/><circle cx="60" cy="71" r="4" fill="var(--illus-brown)"/><circle cx="70" cy="74" r="4" fill="var(--illus-brown)"/>`;
+      } else if (key === 'clothingstore') {
+        awningA = 'var(--illus-pink)'; awningB = 'var(--illus-sky)'; bodyFill = 'var(--illus-purple-light)'; signFill = 'var(--illus-pink)';
+        iconInner = `<path d="M50 72 L70 72 L76 80 L70 84 L68 80 L68 92 L52 92 L52 80 L50 84 L44 80 Z" fill="var(--illus-sky)" stroke="var(--illus-ink)" stroke-width="2.5"/>`;
+      } else if (key === 'supermarket') {
+        awningA = 'var(--illus-green)'; awningB = 'var(--illus-white)'; bodyFill = 'var(--illus-sky)'; signFill = 'var(--illus-blue)';
+        iconInner = `<polygon points="44,74 76,74 72,90 48,90" fill="var(--illus-yellow)" stroke="var(--illus-ink)" stroke-width="3"/><circle cx="52" cy="94" r="3.5" fill="var(--illus-ink)"/><circle cx="68" cy="94" r="3.5" fill="var(--illus-ink)"/>`;
+      }
+
+      return svgWrapper(`
+        <rect x="18" y="44" width="84" height="58" rx="8" fill="${bodyFill}" stroke="var(--illus-ink)" stroke-width="4"/>
+        <rect x="26" y="18" width="68" height="18" rx="6" fill="${signFill}" stroke="var(--illus-ink)" stroke-width="3.5"/>
+        <path d="M14 38 L106 38 L102 54 C94 58, 86 58, 82 52 C76 58, 66 58, 60 52 C54 58, 44 58, 38 52 C34 58, 26 58, 18 54 Z" fill="${awningA}" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+        <rect x="38" y="38" width="16" height="15" fill="${awningB}"/>
+        <rect x="66" y="38" width="16" height="15" fill="${awningB}"/>
+        <rect x="34" y="62" width="52" height="36" rx="6" fill="var(--illus-white)" stroke="var(--illus-ink)" stroke-width="3.5"/>
+        ${iconInner}
+      `, size || 100);
+    }
+
+    function getWelcomeHeroSvg() {
+      return `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 270" width="100%" style="max-width:380px;display:block;margin:0 auto;" aria-hidden="true">
+          <rect x="14" y="20" width="352" height="230" rx="28" fill="var(--tertiary-container)" stroke="var(--illus-ink)" stroke-width="4"/>
+          <circle cx="315" cy="60" r="24" fill="var(--illus-yellow)" stroke="var(--illus-ink)" stroke-width="4"/>
+          <path d="M14 210 L366 210 L366 226 C366 240, 354 250, 340 250 L40 250 C26 250, 14 240, 14 226 Z" fill="var(--illus-green-light)" stroke="var(--illus-ink)" stroke-width="4"/>
+
+          <!-- Left Store: Bakery -->
+          <rect x="34" y="102" width="106" height="108" rx="10" fill="var(--illus-yellow-light)" stroke="var(--illus-ink)" stroke-width="4"/>
+          <path d="M28 102 L146 102 L140 124 L34 124 Z" fill="var(--illus-pink)" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+          <rect x="52" y="138" width="70" height="44" rx="8" fill="var(--illus-white)" stroke="var(--illus-ink)" stroke-width="3.5"/>
+          <ellipse cx="87" cy="166" rx="18" ry="10" fill="var(--illus-brown)" stroke="var(--illus-ink)" stroke-width="3"/>
+
+          <!-- Right Store: Toy & Book -->
+          <rect x="160" y="88" width="118" height="122" rx="10" fill="var(--illus-pink-light)" stroke="var(--illus-ink)" stroke-width="4"/>
+          <path d="M154 88 L284 88 L278 112 L160 112 Z" fill="var(--illus-purple)" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+          <rect x="180" y="128" width="78" height="46" rx="8" fill="var(--illus-white)" stroke="var(--illus-ink)" stroke-width="3.5"/>
+          <circle cx="204" cy="151" r="11" fill="var(--illus-yellow)" stroke="var(--illus-ink)" stroke-width="3"/>
+          <rect x="224" y="140" width="22" height="22" rx="4" fill="var(--illus-blue)" stroke="var(--illus-ink)" stroke-width="3"/>
+
+          <!-- Happy Shopper Character -->
+          <circle cx="316" cy="144" r="20" fill="var(--illus-tan-light)" stroke="var(--illus-ink)" stroke-width="4"/>
+          <circle cx="309" cy="142" r="2.8" fill="var(--illus-ink)"/>
+          <circle cx="323" cy="142" r="2.8" fill="var(--illus-ink)"/>
+          <path d="M310 151 Q316 157 322 151" fill="none" stroke="var(--illus-ink)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M298 168 L334 168 L342 210 L290 210 Z" fill="var(--illus-blue)" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+          <rect x="274" y="176" width="28" height="32" rx="6" fill="var(--illus-pink)" stroke="var(--illus-ink)" stroke-width="3.5"/>
+          <path d="M280 176 C280 164, 296 164, 296 176" fill="none" stroke="var(--illus-ink)" stroke-width="3.5"/>
+        </svg>
+      `;
+    }
+
+    function getCharacterSvg(role, size) {
+      const shirtColor = role === 'shopkeeper' ? 'var(--illus-pink)' : 'var(--illus-blue)';
+      const hatSvg = role === 'shopkeeper'
+        ? `<path d="M38 36 C38 20, 82 20, 82 36 Z" fill="var(--illus-white)" stroke="var(--illus-ink)" stroke-width="4"/>`
+        : `<path d="M38 38 C40 22, 80 22, 82 38" fill="var(--illus-brown)" stroke="var(--illus-ink)" stroke-width="4"/>`;
+      return svgWrapper(`
+        <path d="M28 108 L36 74 L84 74 L92 108 Z" fill="${shirtColor}" stroke="var(--illus-ink)" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="60" cy="50" r="22" fill="var(--illus-tan-light)" stroke="var(--illus-ink)" stroke-width="4"/>
+        ${hatSvg}
+        <circle cx="52" cy="50" r="3" fill="var(--illus-ink)"/>
+        <circle cx="68" cy="50" r="3" fill="var(--illus-ink)"/>
+        <path d="M52 59 Q60 66 68 59" fill="none" stroke="var(--illus-ink)" stroke-width="3" stroke-linecap="round"/>
+      `, size || 88);
+    }
+
+    function getShoppingListSvg(size) {
+      return svgWrapper(`
+        <rect x="24" y="18" width="72" height="86" rx="10" fill="var(--illus-cream)" stroke="var(--illus-ink)" stroke-width="4"/>
+        <rect x="42" y="10" width="36" height="16" rx="6" fill="var(--illus-purple)" stroke="var(--illus-ink)" stroke-width="4"/>
+        <circle cx="38" cy="44" r="4" fill="var(--illus-pink)"/>
+        <line x1="48" y1="44" x2="82" y2="44" stroke="var(--illus-ink)" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="38" cy="62" r="4" fill="var(--illus-sky)"/>
+        <line x1="48" y1="62" x2="82" y2="62" stroke="var(--illus-ink)" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="38" cy="80" r="4" fill="var(--illus-green)"/>
+        <line x1="48" y1="80" x2="76" y2="80" stroke="var(--illus-ink)" stroke-width="4" stroke-linecap="round"/>
+      `, size || 88);
+    }
+
+    /* ======================================================================
+       2. CURRICULUM & ACTIVITY DATA (All strings in backtick literals)
+       ====================================================================== */
+    const TK_VOCAB = [
+      { id: `bread`, word: `Bread`, hint: `Yummy baked bread!` },
+      { id: `teddy`, word: `Teddy Bear`, hint: `A soft, cuddly toy!` },
+      { id: `book`, word: `Book`, hint: `A fun storybook to read!` },
+      { id: `apple`, word: `Apple`, hint: `A crunchy red fruit!` },
+      { id: `shirt`, word: `Shirt`, hint: `Clothes to wear!` },
+      { id: `flower`, word: `Flower`, hint: `A pretty pink flower!` }
+    ];
+
+    const TK_MATCH_PRODUCTS = [
+      { id: `bread`, label: `Bread`, correctStore: `bakery` },
+      { id: `teddy`, label: `Teddy Bear`, correctStore: `toystore` },
+      { id: `book`, label: `Book`, correctStore: `bookstore` },
+      { id: `apple`, label: `Apple`, correctStore: `fruitstore` }
+    ];
+
+    const TK_MATCH_STORES = [
+      { id: `bakery`, label: `Bakery` },
+      { id: `toystore`, label: `Toy Store` },
+      { id: `bookstore`, label: `Bookstore` },
+      { id: `fruitstore`, label: `Fruit Store` }
+    ];
+
+    const TK_QUIZ = [
+      {
+        id: `q1`,
+        prompt: `Find the APPLE.`,
+        answer: `apple`,
+        options: [
+          { id: `apple`, label: `Apple` },
+          { id: `banana`, label: `Banana` },
+          { id: `bread`, label: `Bread` }
+        ]
+      },
+      {
+        id: `q2`,
+        prompt: `Find the TOY CAR.`,
+        answer: `toycar`,
+        options: [
+          { id: `toycar`, label: `Toy Car` },
+          { id: `pencil`, label: `Pencil` },
+          { id: `flower`, label: `Flower` }
+        ]
+      }
+    ];
+
+    const TK_COLOR_ITEMS = [
+      { id: `apple`, label: `Apple`, instruction: `Color the apple RED.`, targetColor: `red`, targetLabel: `RED` },
+      { id: `banana`, label: `Banana`, instruction: `Color the banana YELLOW.`, targetColor: `yellow`, targetLabel: `YELLOW` },
+      { id: `shirt`, label: `Shirt`, instruction: `Color the shirt BLUE.`, targetColor: `blue`, targetLabel: `BLUE` },
+      { id: `flower`, label: `Flower`, instruction: `Color the flower PINK.`, targetColor: `pink`, targetLabel: `PINK` }
+    ];
+
+    const TK_COLOR_PALETTE = [
+      { id: `red`, label: `Red`, cssVar: `var(--illus-red)`, swatchClass: `swatch-red` },
+      { id: `yellow`, label: `Yellow`, cssVar: `var(--illus-yellow)`, swatchClass: `swatch-yellow` },
+      { id: `blue`, label: `Blue`, cssVar: `var(--illus-blue)`, swatchClass: `swatch-blue` },
+      { id: `pink`, label: `Pink`, cssVar: `var(--illus-pink)`, swatchClass: `swatch-pink` }
+    ];
+
+    const TK_SPEAKING = [
+      { id: `s1`, teacher: `What do you want?`, student: `I want an apple.`, img: `apple` },
+      { id: `s2`, teacher: `What is this?`, student: `It is bread.`, img: `bread` },
+      { id: `s3`, teacher: `Where can you buy bread?`, student: `At the bakery.`, img: `bakery`, isStore: true },
+      { id: `s4`, teacher: `Do you like apples?`, student: `Yes, I do!`, img: `apple` }
+    ];
+
+    const SD_STORES_BANK = [
+      `Bakery`, `Bookstore`, `Toy Store`, `Pet Shop`, `Clothing Store`, `Supermarket`
+    ];
+
+    const SD_ACT1_STORES = [
+      { id: `bakery`, answer: `Bakery` },
+      { id: `bookstore`, answer: `Bookstore` },
+      { id: `toystore`, answer: `Toy Store` },
+      { id: `petshop`, answer: `Pet Shop` },
+      { id: `clothingstore`, answer: `Clothing Store` },
+      { id: `supermarket`, answer: `Supermarket` }
+    ];
+
+    const SD_MATCH_PRODUCTS = [
+      { id: `cake`, label: `Cake`, img: `cake`, correctStore: `bakery` },
+      { id: `notebook`, label: `Notebook`, img: `notebook`, correctStore: `bookstore` },
+      { id: `catfood`, label: `Cat Food`, img: `catfood`, correctStore: `petshop` },
+      { id: `shoes`, label: `Shoes`, img: `shoes`, correctStore: `clothingstore` },
+      { id: `teddy`, label: `Teddy Bear`, img: `teddy`, correctStore: `toystore` },
+      { id: `milk`, label: `Milk`, img: `milk`, correctStore: `supermarket` }
+    ];
+
+    const SD_MATCH_STORES = [
+      { id: `bakery`, label: `Bakery` },
+      { id: `bookstore`, label: `Bookstore` },
+      { id: `petshop`, label: `Pet Shop` },
+      { id: `clothingstore`, label: `Clothing Store` },
+      { id: `toystore`, label: `Toy Store` },
+      { id: `supermarket`, label: `Supermarket` }
+    ];
+
+    const SD_SENTENCES = [
+      { id: `st1`, before: `I buy bread at the`, after: `.`, answer: `Bakery`, explain: `A bakery makes and sells bread and cakes.` },
+      { id: `st2`, before: `I buy books at the`, after: `.`, answer: `Bookstore`, explain: `A bookstore sells books, notebooks, and pencils.` },
+      { id: `st3`, before: `I buy a doll at the`, after: `.`, answer: `Toy Store`, explain: `A toy store sells dolls, teddy bears, and toy cars.` },
+      { id: `st4`, before: `I buy dog food at the`, after: `.`, answer: `Pet Shop`, explain: `A pet shop sells pet food and supplies for animals.` },
+      { id: `st5`, before: `I buy milk at the`, after: `.`, answer: `Supermarket`, explain: `A supermarket sells milk, eggs, fruit, and groceries.` },
+      { id: `st6`, before: `I buy a T-shirt at the`, after: `.`, answer: `Clothing Store`, explain: `A clothing store sells shirts, dresses, and shoes.` }
+    ];
+
+    const SD_READING_PASSAGE = `Last Sunday, Rina went to the shopping center with her mother. First, they visited the supermarket to buy milk, eggs, and apples. Then, Rina went to the bookstore to buy a new storybook and some pencils. After that, they visited the bakery. Rina bought two donuts and a chocolate cake. Finally, they went home happily.`;
+
+    const SD_READING_QUESTIONS = [
+      {
+        id: `rq1`,
+        q: `1. Where did Rina go last Sunday?`,
+        options: [`To the park`, `To the shopping center`, `To the zoo`, `To the library`],
+        answer: 1
+      },
+      {
+        id: `rq2`,
+        q: `2. Who went shopping with Rina?`,
+        options: [`Her father`, `Her brother`, `Her mother`, `Her friend`],
+        answer: 2
+      },
+      {
+        id: `rq3`,
+        q: `3. What did they buy at the supermarket?`,
+        options: [`Bread and cake`, `Milk, eggs, and apples`, `Books and pencils`, `Toys and shoes`],
+        answer: 1
+      },
+      {
+        id: `rq4`,
+        q: `4. What did Rina buy at the bookstore?`,
+        options: [`Two donuts`, `A T-shirt`, `A new storybook and some pencils`, `Cat food`],
+        answer: 2
+      },
+      {
+        id: `rq5`,
+        q: `5. What did Rina buy at the bakery?`,
+        options: [`Milk and eggs`, `Apples and bananas`, `A teddy bear`, `Two donuts and a chocolate cake`],
+        answer: 3
+      }
+    ];
+
+    const SD_ARRANGE = [
+      { id: `ar1`, tiles: [`buy`, `I`, `bread`, `the`, `at`, `bakery.`], answer: `I buy bread at the bakery.` },
+      { id: `ar2`, tiles: [`a`, `wants`, `She`, `new`, `book.`], answer: `She wants a new book.` },
+      { id: `ar3`, tiles: [`supermarket`, `We`, `the`, `visit.`], answer: `We visit the supermarket.` },
+      { id: `ar4`, tiles: [`toy`, `likes`, `He`, `cars.`], answer: `He likes toy cars.` },
+      { id: `ar5`, tiles: [`mother`, `shopping`, `My`, `goes.`], answer: `My mother goes shopping.` }
+    ];
+
+    const SD_DIALOGUE_BANK = [`Good morning!`, `Thank you.`];
+
+    const SD_SHOPPING_CATS = [
+      { id: `bakery`, label: `Bakery`, presets: [`Bread`, `Chocolate Cake`, `Donuts`] },
+      { id: `bookstore`, label: `Bookstore`, presets: [`Storybook`, `Notebook`, `Pencils`] },
+      { id: `toystore`, label: `Toy Store`, presets: [`Teddy Bear`, `Toy Car`, `Doll`] },
+      { id: `supermarket`, label: `Supermarket`, presets: [`Milk`, `Apples`, `Eggs`] }
+    ];
+
+    const PART_C_STORES = [
+      {
+        id: `bakery`,
+        label: `Bakery`,
+        products: [
+          { id: `bread`, label: `Bread` },
+          { id: `cake`, label: `Cake` },
+          { id: `donut`, label: `Donut` }
+        ]
+      },
+      {
+        id: `supermarket`,
+        label: `Supermarket`,
+        products: [
+          { id: `milk`, label: `Milk` },
+          { id: `apple`, label: `Apple` },
+          { id: `banana`, label: `Banana` }
+        ]
+      },
+      {
+        id: `bookstore`,
+        label: `Bookstore`,
+        products: [
+          { id: `book`, label: `Book` },
+          { id: `notebook`, label: `Notebook` },
+          { id: `pencil`, label: `Pencil` }
+        ]
+      },
+      {
+        id: `toystore`,
+        label: `Toy Store`,
+        products: [
+          { id: `teddy`, label: `Teddy Bear` },
+          { id: `toycar`, label: `Toy Car` },
+          { id: `ball`, label: `Ball` }
+        ]
+      },
+      {
+        id: `clothingstore`,
+        label: `Clothing Store`,
+        products: [
+          { id: `shirt`, label: `Shirt` },
+          { id: `shoes`, label: `Shoes` },
+          { id: `hat`, label: `Hat` }
+        ]
+      }
+    ];
+
+    const PART_C_EXPRESSIONS = {
+      shopkeeper: [`Hello!`, `Can I help you?`, `What do you want?`, `Here you are.`, `Anything else?`],
+      customer: [`Hello!`, `Yes, please.`, `I want a book.`, `Thank you!`, `No, thank you.`]
+    };
+
+    /* ======================================================================
+       3. APPLICATION STATE & PERSISTENCE
+       ====================================================================== */
+    function createInitialState() {
+      return {
+        studentName: ``,
+        studentClass: ``,
+        level: `tk`,
+        view: `welcome`,
+        soundOn: true,
+        reviewMode: false,
+
+        // Part A (TK)
+        tkVocabClicked: [],
+        tkMatchPairs: {},
+        tkMatchChecked: false,
+        tkQuizAnswers: {},
+        tkQuizChecked: false,
+        tkColorBrush: `red`,
+        tkColored: {},
+        tkSpeakDone: [],
+
+        // Part B (SD)
+        sdAct1Inputs: {},
+        sdAct1Checked: false,
+        sdAct1ActiveBlank: `bakery`,
+        sdMatchPairs: {},
+        sdMatchChecked: false,
+        sdSentInputs: {},
+        sdSentChecked: false,
+        sdSentActiveBlank: `st1`,
+        sdReadAnswers: {},
+        sdReadChecked: false,
+        sdArrangePicked: { ar1: [], ar2: [], ar3: [], ar4: [], ar5: [] },
+        sdArrangeChecked: false,
+        sdDialogueBlanks: { b1: ``, b2: `` },
+        sdDialogueActiveSlot: `b1`,
+        sdDialogueChecked: false,
+        sdListCats: { bakery: ``, bookstore: ``, toystore: ``, supermarket: `` },
+        sdListSentences: { s1: ``, s2: ``, s3: `` },
+        sdListSaved: false,
+
+        // Part C
+        partCStore: `bakery`,
+        partCRole: `customer`,
+        partCSelectedProducts: [],
+        partCChat: [],
+        partCDone: false
+      };
+    }
+
+    let appState = createInitialState();
+    let selectedMatchSource = null;
+    let draggedProductId = null;
+    let activeSpeechTimer = null;
+    let activeDialogueLine = -1;
+
+    function getNavItems() {
+      if (appState.level === `tk`) {
+        return [
+          { id: `welcome`, short: `Start`, label: `Welcome` },
+          { id: `tk1`, short: `A1`, label: `Look & Say` },
+          { id: `tk2`, short: `A2`, label: `Match Stores` },
+          { id: `tk3`, short: `A3`, label: `Picture Quiz` },
+          { id: `tk4`, short: `A4`, label: `Coloring` },
+          { id: `tk5`, short: `A5`, label: `Speaking` },
+          { id: `partc`, short: `C`, label: `Shopkeeper` },
+          { id: `results`, short: `★`, label: `Results` }
+        ];
+      }
+      return [
+        { id: `welcome`, short: `Start`, label: `Welcome` },
+        { id: `sd1`, short: `B1`, label: `Name Store` },
+        { id: `sd2`, short: `B2`, label: `Match Items` },
+        { id: `sd3`, short: `B3`, label: `Sentences` },
+        { id: `sd4`, short: `B4`, label: `Reading` },
+        { id: `sd5`, short: `B5`, label: `Word Order` },
+        { id: `sd6`, short: `B6`, label: `Dialogue` },
+        { id: `sd7`, short: `B7`, label: `Shopping List` },
+        { id: `partc`, short: `C`, label: `Shopkeeper` },
+        { id: `results`, short: `★`, label: `Results` }
+      ];
+    }
+
+    async function persistState() {
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.setAppState === `function`) {
+          await window.notebookAppApi.setAppState(appState);
+        }
+      } catch (err) {
+        /* ignore persistence error in preview */
+      }
+    }
+
+    function speakText(text) {
+      if (!appState.soundOn) return;
+      try {
+        if (`speechSynthesis` in window) {
+          window.speechSynthesis.cancel();
+          const utter = new SpeechSynthesisUtterance(text);
+          utter.lang = `en-US`;
+          utter.rate = 0.9;
+          utter.pitch = 1.08;
+          window.speechSynthesis.speak(utter);
+        }
+      } catch (err) {
+        /* speech synthesis not supported */
+      }
+    }
+
+    function playChime(isGood) {
+      if (!appState.soundOn) return;
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        const ctx = new AudioCtx();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = `sine`;
+        const now = ctx.currentTime;
+        if (isGood) {
+          osc.frequency.setValueAtTime(523.25, now);
+          osc.frequency.setValueAtTime(659.25, now + 0.09);
+        } else {
+          osc.frequency.setValueAtTime(320, now);
+          osc.frequency.setValueAtTime(260, now + 0.1);
+        }
+        gain.gain.setValueAtTime(0.08, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+        osc.start(now);
+        osc.stop(now + 0.25);
+      } catch (err) {
+        /* audio context blocked */
+      }
+    }
+
+    /* ======================================================================
+       4. SCORING & COMPLETION ENGINE
+       ====================================================================== */
+    function computeMetrics() {
+      if (appState.level === `tk`) {
+        const a1Done = appState.tkVocabClicked.length >= TK_VOCAB.length;
+        const a1Correct = appState.tkVocabClicked.length;
+
+        let a2Correct = 0;
+        TK_MATCH_PRODUCTS.forEach(p => {
+          if (appState.tkMatchPairs[p.id] === p.correctStore) a2Correct += 1;
+        });
+        const a2Done = appState.tkMatchChecked || Object.keys(appState.tkMatchPairs).length === TK_MATCH_PRODUCTS.length;
+
+        let a3Correct = 0;
+        TK_QUIZ.forEach(q => {
+          if (appState.tkQuizAnswers[q.id] === q.answer) a3Correct += 1;
+        });
+        const a3Done = appState.tkQuizChecked;
+
+        let a4Correct = 0;
+        TK_COLOR_ITEMS.forEach(c => {
+          if (appState.tkColored[c.id] === c.targetColor) a4Correct += 1;
+        });
+        const a4Done = a4Correct === TK_COLOR_ITEMS.length;
+
+        const a5Done = appState.tkSpeakDone.length >= TK_SPEAKING.length;
+        const a5Correct = appState.tkSpeakDone.length;
+
+        const cDone = appState.partCDone;
+        const cCorrect = cDone ? 1 : 0;
+
+        const activities = [
+          { id: `tk1`, title: `Activity 1: Look and Say!`, done: a1Done, score: a1Correct, max: 6 },
+          { id: `tk2`, title: `Activity 2: Where Should I Go?`, done: a2Done, score: a2Correct, max: 4 },
+          { id: `tk3`, title: `Activity 3: Circle the Correct Picture!`, done: a3Done, score: a3Correct, max: 2 },
+          { id: `tk4`, title: `Activity 4: Color the Shopping Items!`, done: a4Done, score: a4Correct, max: 4 },
+          { id: `tk5`, title: `Activity 5: Let's Go Shopping!`, done: a5Done, score: a5Correct, max: 4 },
+          { id: `partc`, title: `Part C: Be a Shopkeeper!`, done: cDone, score: cCorrect, max: 1 }
+        ];
+
+        const completedCount = activities.filter(a => a.done).length;
+        const totalCorrect = activities.reduce((acc, a) => acc + a.score, 0);
+        const totalMax = activities.reduce((acc, a) => acc + a.max, 0);
+        return { activities, completedCount, totalActivities: activities.length, totalCorrect, totalMax };
+      }
+
+      // Elementary School (SD)
+      let b1Correct = 0;
+      SD_ACT1_STORES.forEach(s => {
+        if ((appState.sdAct1Inputs[s.id] || ``).trim().toLowerCase() === s.answer.toLowerCase()) b1Correct += 1;
+      });
+      const b1Done = appState.sdAct1Checked;
+
+      let b2Correct = 0;
+      SD_MATCH_PRODUCTS.forEach(p => {
+        if (appState.sdMatchPairs[p.id] === p.correctStore) b2Correct += 1;
+      });
+      const b2Done = appState.sdMatchChecked;
+
+      let b3Correct = 0;
+      SD_SENTENCES.forEach(s => {
+        if ((appState.sdSentInputs[s.id] || ``).trim().toLowerCase() === s.answer.toLowerCase()) b3Correct += 1;
+      });
+      const b3Done = appState.sdSentChecked;
+
+      let b4Correct = 0;
+      SD_READING_QUESTIONS.forEach(q => {
+        if (appState.sdReadAnswers[q.id] === q.answer) b4Correct += 1;
+      });
+      const b4Done = appState.sdReadChecked;
+
+      let b5Correct = 0;
+      SD_ARRANGE.forEach(a => {
+        const picked = (appState.sdArrangePicked[a.id] || []).map(idx => a.tiles[idx]).join(` `);
+        if (picked === a.answer) b5Correct += 1;
+      });
+      const b5Done = appState.sdArrangeChecked;
+
+      let b6Correct = 0;
+      if (appState.sdDialogueBlanks.b1 === `Good morning!`) b6Correct += 1;
+      if (appState.sdDialogueBlanks.b2 === `Thank you.`) b6Correct += 1;
+      const b6Done = appState.sdDialogueChecked;
+
+      const b7Done = appState.sdListSaved;
+      const b7Correct = b7Done ? 1 : 0;
+
+      const cDone = appState.partCDone;
+      const cCorrect = cDone ? 1 : 0;
+
+      const activities = [
+        { id: `sd1`, title: `Activity 1: Identify the Store!`, done: b1Done, score: b1Correct, max: 6 },
+        { id: `sd2`, title: `Activity 2: Match the Products!`, done: b2Done, score: b2Correct, max: 6 },
+        { id: `sd3`, title: `Activity 3: Complete the Sentences!`, done: b3Done, score: b3Correct, max: 6 },
+        { id: `sd4`, title: `Activity 4: Reading Comprehension`, done: b4Done, score: b4Correct, max: 5 },
+        { id: `sd5`, title: `Activity 5: Arrange the Words!`, done: b5Done, score: b5Correct, max: 5 },
+        { id: `sd6`, title: `Activity 6: Shopping Conversation!`, done: b6Done, score: b6Correct, max: 2 },
+        { id: `sd7`, title: `Activity 7: My Shopping List!`, done: b7Done, score: b7Correct, max: 1 },
+        { id: `partc`, title: `Part C: Be a Shopkeeper!`, done: cDone, score: cCorrect, max: 1 }
+      ];
+
+      const completedCount = activities.filter(a => a.done).length;
+      const totalCorrect = activities.reduce((acc, a) => acc + a.score, 0);
+      const totalMax = activities.reduce((acc, a) => acc + a.max, 0);
+      return { activities, completedCount, totalActivities: activities.length, totalCorrect, totalMax };
+    }
+
+    /* ======================================================================
+       5. NAVIGATION & GLOBAL SHELL RENDERING
+       ====================================================================== */
+    function renderShell() {
+      const metrics = computeMetrics();
+      const pct = metrics.totalActivities ? Math.round((metrics.completedCount / metrics.totalActivities) * 100) : 0;
+      const scorePct = metrics.totalMax ? Math.round((metrics.totalCorrect / metrics.totalMax) * 100) : 0;
+
+      const badge = document.getElementById(`student-badge`);
+      if (badge) {
+        const namePart = appState.studentName.trim() ? appState.studentName.trim() : `Little Shopper`;
+        const classPart = appState.studentClass.trim() ? ` · Class ${appState.studentClass.trim()}` : ``;
+        const levelPart = appState.level === `tk` ? `TK` : `SD`;
+        badge.textContent = `${namePart}${classPart} (${levelPart})`;
+      }
+
+      const swTk = document.getElementById(`switch-tk`);
+      const swSd = document.getElementById(`switch-sd`);
+      if (swTk) swTk.classList.toggle(`active`, appState.level === `tk`);
+      if (swSd) swSd.classList.toggle(`active`, appState.level === `sd`);
+
+      const sndLabel = document.getElementById(`sound-toggle-label`);
+      if (sndLabel) sndLabel.textContent = appState.soundOn ? `Voice: On` : `Voice: Off`;
+
+      const progText = document.getElementById(`progress-text`);
+      const progPct = document.getElementById(`progress-pct`);
+      const progFill = document.getElementById(`progress-fill`);
+      const progAria = document.getElementById(`progress-bar-aria`);
+      if (progText) progText.textContent = `${metrics.completedCount} / ${metrics.totalActivities} Activities Completed`;
+      if (progPct) progPct.textContent = `${pct}%`;
+      if (progFill) progFill.style.width = `${pct}%`;
+      if (progAria) progAria.setAttribute(`aria-valuenow`, String(pct));
+
+      const scoreText = document.getElementById(`header-score-text`);
+      if (scoreText) scoreText.textContent = `Score: ${metrics.totalCorrect}/${metrics.totalMax} (${scorePct}%)`;
+
+      const navStrip = document.getElementById(`nav-strip`);
+      if (navStrip) {
+        const navItems = getNavItems();
+        const doneMap = {};
+        metrics.activities.forEach(a => { doneMap[a.id] = a.done; });
+        navStrip.innerHTML = navItems.map(item => {
+          const isActive = appState.view === item.id;
+          const isDone = !!doneMap[item.id];
+          return `
+            <button type="button" class="nav-pill ${isActive ? `active` : ``} ${isDone ? `done` : ``}" onclick="goToView('${item.id}')">
+              <span class="nav-dot">${isDone ? `✓` : item.short}</span>
+              <span>${item.label}</span>
+            </button>
+          `;
+        }).join(``);
+      }
+    }
+
+    function renderStageFooter() {
+      const navItems = getNavItems();
+      const idx = navItems.findIndex(n => n.id === appState.view);
+      const prev = idx > 0 ? navItems[idx - 1] : null;
+      const next = idx >= 0 && idx < navItems.length - 1 ? navItems[idx + 1] : null;
+      return `
+        <div class="stage-footer">
+          <div>
+            ${prev ? `<button type="button" class="btn btn-soft" onclick="goToView('${prev.id}')"><i data-lucide="arrow-left" aria-hidden="true"></i><span>Back: ${prev.label}</span></button>` : ``}
+          </div>
+          <div>
+            ${next ? `<button type="button" class="btn btn-primary" onclick="goToView('${next.id}')"><span>Next: ${next.label}</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>` : ``}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderApp() {
+      renderShell();
+      const root = document.getElementById(`stage-root`);
+      if (!root) return;
+
+      let html = ``;
+      switch (appState.view) {
+        case `welcome`: html = renderWelcome(); break;
+        case `tk1`: html = renderTk1(); break;
+        case `tk2`: html = renderTk2(); break;
+        case `tk3`: html = renderTk3(); break;
+        case `tk4`: html = renderTk4(); break;
+        case `tk5`: html = renderTk5(); break;
+        case `sd1`: html = renderSd1(); break;
+        case `sd2`: html = renderSd2(); break;
+        case `sd3`: html = renderSd3(); break;
+        case `sd4`: html = renderSd4(); break;
+        case `sd5`: html = renderSd5(); break;
+        case `sd6`: html = renderSd6(); break;
+        case `sd7`: html = renderSd7(); break;
+        case `partc`: html = renderPartC(); break;
+        case `results`: html = renderResults(); break;
+        default: html = renderWelcome();
+      }
+      root.innerHTML = html;
+
+      if (window.lucide && typeof window.lucide.createIcons === `function`) {
+        window.lucide.createIcons();
+      }
+    }
+
+    /* ======================================================================
+       6. VIEW RENDERERS
+       ====================================================================== */
+    function renderWelcome() {
+      return `
+        <section class="hero-panel">
+          <div class="welcome-grid">
+            <div>
+              <p class="kicker">Interactive English Worksheet (LKPD)</p>
+              <h1 class="display" style="margin-top:var(--space-xs);">Let's Go <em>Shopping!</em></h1>
+              <p class="muted" style="font-size:1.15rem;margin-top:var(--space-sm);">Explore Different Stores and Learn English!</p>
+
+              <div class="welcome-form-row">
+                <div class="field">
+                  <label for="student-name-input">Student Name</label>
+                  <input id="student-name-input" class="pill-input" type="text" value="${escapeHtml(appState.studentName)}" oninput="updateStudentInfo('studentName', this.value)" placeholder="e.g., Rina">
+                </div>
+                <div class="field">
+                  <label for="student-class-input">Class</label>
+                  <input id="student-class-input" class="pill-input" type="text" value="${escapeHtml(appState.studentClass)}" oninput="updateStudentInfo('studentClass', this.value)" placeholder="e.g., TK-B or 3A">
+                </div>
+              </div>
+
+              <p class="kicker" style="margin-top:var(--space-lg);">Choose Your Learning Level to Start</p>
+              <div class="level-choices">
+                <button type="button" class="level-card-btn tk ${appState.level === `tk` ? `selected` : ``}" onclick="selectLevel('tk', true)">
+                  <span class="level-card-title">Kindergarten (TK)</span>
+                  <span class="level-card-sub">Part A · Picture words, matching, coloring & speaking</span>
+                </button>
+                <button type="button" class="level-card-btn sd ${appState.level === `sd` ? `selected` : ``}" onclick="selectLevel('sd', true)">
+                  <span class="level-card-title">Elementary School (SD)</span>
+                  <span class="level-card-sub">Part B · Stores, reading story, sentences & shopping list</span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              ${getWelcomeHeroSvg()}
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    /* ---------- PART A: KINDERGARTEN (TK) ---------- */
+    function renderTk1() {
+      const count = appState.tkVocabClicked.length;
+      return `
+        <section class="card">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part A · Kindergarten Worksheet (TK)</p>
+              <h2>Activity 1: Look and <em>Say!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="volume-2" aria-hidden="true"></i>
+                <span>Look at the pictures and say the words! Click each picture to hear it.</span>
+              </div>
+            </div>
+            <span class="badge ${count === 6 ? `badge-positive` : `badge-sky`}">${count} / 6 Words Practiced</span>
+          </div>
+
+          <div class="vocab-grid">
+            ${TK_VOCAB.map(item => {
+              const practiced = appState.tkVocabClicked.includes(item.id);
+              return `
+                <button type="button" class="vocab-card ${practiced ? `practiced` : ``}" onclick="sayVocabWord('${item.id}')">
+                  ${getProductSvg(item.id, 110)}
+                  <span class="vocab-word">${item.word}</span>
+                  <span class="badge ${practiced ? `badge-positive` : ``}">
+                    <i data-lucide="volume-2" aria-hidden="true"></i>
+                    <span>${practiced ? `Heard! Tap again` : `Tap to Listen`}</span>
+                  </span>
+                </button>
+              `;
+            }).join(``)}
+          </div>
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderTk2() {
+      let correctCount = 0;
+      TK_MATCH_PRODUCTS.forEach(p => {
+        if (appState.tkMatchPairs[p.id] === p.correctStore) correctCount += 1;
+      });
+      const showCheck = appState.tkMatchChecked || appState.reviewMode;
+
+      return `
+        <section class="card card-sky">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part A · Kindergarten Worksheet (TK)</p>
+              <h2>Activity 2: Where Should I <em>Go?</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="mouse-pointer-click" aria-hidden="true"></i>
+                <span>Drag a product onto its store — or tap a product, then tap the matching store!</span>
+              </div>
+            </div>
+            <span class="badge">${Object.keys(appState.tkMatchPairs).length} / 4 Matched</span>
+          </div>
+
+          <div class="match-board">
+            <div class="match-col">
+              <p class="kicker">1. Products</p>
+              ${TK_MATCH_PRODUCTS.map(p => {
+                const isSelected = selectedMatchSource === p.id;
+                const pairedStore = appState.tkMatchPairs[p.id];
+                let stateCls = isSelected ? `selected` : ``;
+                if (showCheck && pairedStore) {
+                  stateCls = pairedStore === p.correctStore ? `matched-ok` : `matched-bad`;
+                }
+                return `
+                  <div class="match-item ${stateCls}" role="button" tabindex="0" draggable="true"
+                       ondragstart="onDragProduct(event, '${p.id}')"
+                       onclick="tapMatchProduct('tk', '${p.id}')"
+                       onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();tapMatchProduct('tk','${p.id}');}">
+                    ${getProductSvg(p.id, 56)}
+                    <div>
+                      <strong>${p.label}</strong>
+                      ${pairedStore ? `<div class="muted" style="font-size:0.85rem;">→ ${getStoreLabel(pairedStore)}</div>` : ``}
+                    </div>
+                  </div>
+                `;
+              }).join(``)}
+            </div>
+
+            <div class="match-col">
+              <p class="kicker">2. Stores</p>
+              ${TK_MATCH_STORES.map(st => {
+                const matchedProd = TK_MATCH_PRODUCTS.find(p => appState.tkMatchPairs[p.id] === st.id);
+                let targetCls = matchedProd ? `has-pair` : ``;
+                let feedbackMsg = ``;
+                if (showCheck && matchedProd) {
+                  const ok = matchedProd.correctStore === st.id;
+                  targetCls = ok ? `matched-ok` : `matched-bad`;
+                  feedbackMsg = ok ? `Great job!` : `Try again!`;
+                }
+                return `
+                  <div class="match-target ${targetCls}" role="button" tabindex="0"
+                       ondragover="event.preventDefault();this.classList.add('drag-over');"
+                       ondragleave="this.classList.remove('drag-over');"
+                       ondrop="onDropStore(event, 'tk', '${st.id}');this.classList.remove('drag-over');"
+                       onclick="tapMatchStore('tk', '${st.id}')"
+                       onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();tapMatchStore('tk','${st.id}');}">
+                    <div style="display:flex;align-items:center;gap:var(--space-sm);">
+                      ${getStoreSvg(st.id, 58)}
+                      <div>
+                        <strong>${st.label}</strong>
+                        <div class="muted" style="font-size:0.85rem;">
+                          ${matchedProd ? `Matched: ${matchedProd.label}` : `Drop or tap here`}
+                        </div>
+                      </div>
+                    </div>
+                    ${feedbackMsg ? `<span class="badge ${feedbackMsg === `Great job!` ? `badge-positive` : ``}">${feedbackMsg}</span>` : ``}
+                  </div>
+                `;
+              }).join(``)}
+            </div>
+          </div>
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="checkTkMatch()">Check My Answers</button>
+            <button type="button" class="btn btn-soft" onclick="showTkMatchAnswers()">Show Correct Answers</button>
+            <button type="button" class="btn btn-ghost" onclick="resetTkMatch()">Reset</button>
+          </div>
+
+          ${showCheck ? `
+            <div class="feedback-box ${correctCount === 4 ? `ok` : `warn`}">
+              <i data-lucide="${correctCount === 4 ? `party-popper` : `sparkles`}" aria-hidden="true"></i>
+              <span>${correctCount === 4 ? `Great job! You matched all 4 products with the right stores!` : `You got ${correctCount} / 4 right. Try again or tap Show Correct Answers!`}</span>
+            </div>
+          ` : ``}
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderTk3() {
+      let score = 0;
+      TK_QUIZ.forEach(q => {
+        if (appState.tkQuizAnswers[q.id] === q.answer) score += 1;
+      });
+      const showCheck = appState.tkQuizChecked || appState.reviewMode;
+
+      return `
+        <section class="card card-grape">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part A · Kindergarten Worksheet (TK)</p>
+              <h2>Activity 3: Circle the Correct <em>Picture!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="circle-dot" aria-hidden="true"></i>
+                <span>Tap the picture that matches the word to circle it!</span>
+              </div>
+            </div>
+            <span class="badge badge-grape">Score: ${showCheck ? score : 0} / 2</span>
+          </div>
+
+          ${TK_QUIZ.map((q, idx) => {
+            const chosen = appState.tkQuizAnswers[q.id];
+            const isCorrect = chosen === q.answer;
+            return `
+              <div class="quiz-block">
+                <h3>Question ${idx + 1}: ${q.prompt}</h3>
+                <div class="picture-options">
+                  ${q.options.map(opt => {
+                    const isPicked = chosen === opt.id;
+                    let cls = isPicked ? `circled` : ``;
+                    if (showCheck && isPicked) {
+                      cls = opt.id === q.answer ? `correct` : `wrong`;
+                    } else if (showCheck && appState.reviewMode && opt.id === q.answer) {
+                      cls = `correct`;
+                    }
+                    return `
+                      <button type="button" class="picture-choice ${cls}" onclick="pickTkQuiz('${q.id}', '${opt.id}')">
+                        ${getProductSvg(opt.id, 96)}
+                        <strong>${opt.label}</strong>
+                      </button>
+                    `;
+                  }).join(``)}
+                </div>
+                ${showCheck && chosen ? `
+                  <div class="feedback-box ${isCorrect ? `ok` : `err`}">
+                    <span>${isCorrect ? `Great job! That is the ${q.options.find(o => o.id === q.answer).label}!` : `Try again! Look closely for the ${q.options.find(o => o.id === q.answer).label}.`}</span>
+                  </div>
+                ` : ``}
+              </div>
+            `;
+          }).join(``)}
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="submitTkQuiz()">Check Score</button>
+          </div>
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderTk4() {
+      let correctCount = 0;
+      TK_COLOR_ITEMS.forEach(c => {
+        if (appState.tkColored[c.id] === c.targetColor) correctCount += 1;
+      });
+
+      return `
+        <section class="card">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part A · Kindergarten Worksheet (TK)</p>
+              <h2>Activity 4: Color the Shopping <em>Items!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="palette" aria-hidden="true"></i>
+                <span>Pick a color below, then tap each black-and-white picture to color it!</span>
+              </div>
+            </div>
+            <span class="badge ${correctCount === 4 ? `badge-positive` : `badge-sky`}">${correctCount} / 4 Colored Right</span>
+          </div>
+
+          <div class="palette-bar" role="group" aria-label="Color Palette">
+            <strong>Pick a Color:</strong>
+            ${TK_COLOR_PALETTE.map(c => `
+              <button type="button" class="swatch-btn ${appState.tkColorBrush === c.id ? `active` : ``}" onclick="selectBrush('${c.id}')">
+                <span class="swatch-dot ${c.swatchClass}" aria-hidden="true"></span>
+                <span>${c.label}</span>
+              </button>
+            `).join(``)}
+            <button type="button" class="swatch-btn ${appState.tkColorBrush === `none` ? `active` : ``}" onclick="selectBrush('none')">
+              <span class="swatch-dot swatch-none" aria-hidden="true"></span>
+              <span>Eraser</span>
+            </button>
+          </div>
+
+          <div class="coloring-grid">
+            ${TK_COLOR_ITEMS.map(item => {
+              const chosenColor = appState.tkColored[item.id];
+              const paletteMatch = TK_COLOR_PALETTE.find(p => p.id === chosenColor);
+              const fillVar = paletteMatch ? paletteMatch.cssVar : `var(--illus-white)`;
+              const isOk = chosenColor === item.targetColor;
+              const hasWrong = chosenColor && !isOk;
+              return `
+                <button type="button" class="coloring-card ${isOk ? `done-ok` : hasWrong ? `done-hint` : ``}" onclick="colorItem('${item.id}')">
+                  ${getProductSvg(item.id, 112, fillVar)}
+                  <strong>${item.label}</strong>
+                  <span class="muted" style="font-size:0.9rem;font-weight:700;">${item.instruction}</span>
+                  ${isOk ? `<span class="badge badge-positive">Great job! ${item.targetLabel}!</span>` : hasWrong ? `<span class="badge">Try ${item.targetLabel}!</span>` : `<span class="badge badge-sky">Tap to color</span>`}
+                </button>
+              `;
+            }).join(``)}
+          </div>
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderTk5() {
+      const doneCount = appState.tkSpeakDone.length;
+      return `
+        <section class="card card-sky">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part A · Kindergarten Worksheet (TK)</p>
+              <h2>Activity 5: Let's Go <em>Shopping!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="message-circle" aria-hidden="true"></i>
+                <span>Listen and practice speaking these shopping sentences out loud!</span>
+              </div>
+            </div>
+            <span class="badge ${doneCount === 4 ? `badge-positive` : `badge-grape`}">${doneCount} / 4 Practiced</span>
+          </div>
+
+          <div class="dialogue-grid">
+            ${TK_SPEAKING.map((d, i) => {
+              const isPracticed = appState.tkSpeakDone.includes(d.id);
+              return `
+                <div class="speak-card ${isPracticed ? `practiced` : ``}">
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:var(--space-sm);">
+                    <span class="kicker">Conversation ${i + 1}</span>
+                    ${d.isStore ? getStoreSvg(d.img, 64) : getProductSvg(d.img, 64)}
+                  </div>
+                  <div class="bubble bubble-teacher">
+                    <strong>Teacher:</strong> ${d.teacher}
+                  </div>
+                  <div class="bubble bubble-student">
+                    <strong>Student:</strong> ${d.student}
+                  </div>
+                  <div style="display:flex;gap:var(--space-sm);flex-wrap:wrap;">
+                    <button type="button" class="btn btn-soft btn-sm" onclick="listenSpeakPair('${d.id}')">
+                      <i data-lucide="volume-2" aria-hidden="true"></i>
+                      <span>Listen</span>
+                    </button>
+                    <button type="button" class="btn ${isPracticed ? `btn-positive` : `btn-primary`} btn-sm" onclick="toggleSpeakDone('${d.id}')">
+                      <i data-lucide="check" aria-hidden="true"></i>
+                      <span>${isPracticed ? `Practiced!` : `I Said It!`}</span>
+                    </button>
+                  </div>
+                </div>
+              `;
+            }).join(``)}
+          </div>
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    /* ---------- PART B: ELEMENTARY SCHOOL (SD) ---------- */
+    function renderSd1() {
+      let score = 0;
+      SD_ACT1_STORES.forEach(s => {
+        if ((appState.sdAct1Inputs[s.id] || ``).trim().toLowerCase() === s.answer.toLowerCase()) score += 1;
+      });
+      const showCheck = appState.sdAct1Checked || appState.reviewMode;
+
+      return `
+        <section class="card">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part B · Elementary School Worksheet (SD)</p>
+              <h2>Activity 1: Identify the <em>Store!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="store" aria-hidden="true"></i>
+                <span>Type the store name or tap a box, then tap a word from the Word Bank!</span>
+              </div>
+            </div>
+            <span class="badge">${showCheck ? `Score: ${score} / 6` : `6 Stores`}</span>
+          </div>
+
+          <div class="word-bank" aria-label="Store Word Bank">
+            <strong>Word Bank:</strong>
+            ${SD_STORES_BANK.map(w => `
+              <button type="button" class="word-chip" onclick="fillSd1Word('${w}')">${w}</button>
+            `).join(``)}
+          </div>
+
+          <div class="store-id-grid">
+            ${SD_ACT1_STORES.map((st, idx) => {
+              const val = appState.sdAct1Inputs[st.id] || ``;
+              const isRight = val.trim().toLowerCase() === st.answer.toLowerCase();
+              const inputCls = showCheck ? (isRight ? `is-correct` : `is-wrong`) : ``;
+              return `
+                <div class="store-id-card">
+                  <span class="kicker">Store ${idx + 1}</span>
+                  ${getStoreSvg(st.id, 108)}
+                  <div class="field">
+                    <label for="sd1-${st.id}">Store Name</label>
+                    <input id="sd1-${st.id}" class="pill-input ${inputCls}" type="text" value="${escapeHtml(val)}"
+                           onfocus="appState.sdAct1ActiveBlank='${st.id}'"
+                           oninput="updateSd1Input('${st.id}', this.value)"
+                           placeholder="Type or pick from Word Bank">
+                  </div>
+                  ${showCheck ? `
+                    <span class="badge ${isRight ? `badge-positive` : ``}">
+                      ${isRight ? `Correct!` : `Answer: ${st.answer}`}
+                    </span>
+                  ` : ``}
+                </div>
+              `;
+            }).join(``)}
+          </div>
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="checkSd1()">Check Answers</button>
+          </div>
+          ${showCheck ? `
+            <div class="feedback-box ${score === 6 ? `ok` : `warn`}">
+              <span>${score === 6 ? `Awesome! You identified all 6 stores correctly!` : `You got ${score} / 6 right. Check the labels above to review!`}</span>
+            </div>
+          ` : ``}
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderSd2() {
+      let score = 0;
+      SD_MATCH_PRODUCTS.forEach(p => {
+        if (appState.sdMatchPairs[p.id] === p.correctStore) score += 1;
+      });
+      const showCheck = appState.sdMatchChecked || appState.reviewMode;
+
+      return `
+        <section class="card card-sky">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part B · Elementary School Worksheet (SD)</p>
+              <h2>Activity 2: Match the <em>Products!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="link" aria-hidden="true"></i>
+                <span>Drag a product onto its store — or tap a product, then tap its matching store!</span>
+              </div>
+            </div>
+            <span class="badge">${showCheck ? `Score: ${score} / 6` : `${Object.keys(appState.sdMatchPairs).length} / 6 Matched`}</span>
+          </div>
+
+          <div class="match-board">
+            <div class="match-col">
+              <p class="kicker">Products</p>
+              ${SD_MATCH_PRODUCTS.map(p => {
+                const isSelected = selectedMatchSource === p.id;
+                const paired = appState.sdMatchPairs[p.id];
+                let cls = isSelected ? `selected` : ``;
+                if (showCheck && paired) cls = paired === p.correctStore ? `matched-ok` : `matched-bad`;
+                return `
+                  <div class="match-item ${cls}" role="button" tabindex="0" draggable="true"
+                       ondragstart="onDragProduct(event, '${p.id}')"
+                       onclick="tapMatchProduct('sd', '${p.id}')"
+                       onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();tapMatchProduct('sd','${p.id}');}">
+                    ${getProductSvg(p.img, 54)}
+                    <div>
+                      <strong>${p.label}</strong>
+                      ${paired ? `<div class="muted" style="font-size:0.85rem;">→ ${getStoreLabel(paired)}</div>` : ``}
+                    </div>
+                  </div>
+                `;
+              }).join(``)}
+            </div>
+
+            <div class="match-col">
+              <p class="kicker">Stores</p>
+              ${SD_MATCH_STORES.map(st => {
+                const matched = SD_MATCH_PRODUCTS.find(p => appState.sdMatchPairs[p.id] === st.id);
+                let cls = matched ? `has-pair` : ``;
+                let msg = ``;
+                if (showCheck && matched) {
+                  const ok = matched.correctStore === st.id;
+                  cls = ok ? `matched-ok` : `matched-bad`;
+                  msg = ok ? `Correct!` : `Needs: ${SD_MATCH_PRODUCTS.find(x => x.correctStore === st.id).label}`;
+                }
+                return `
+                  <div class="match-target ${cls}" role="button" tabindex="0"
+                       ondragover="event.preventDefault();this.classList.add('drag-over');"
+                       ondragleave="this.classList.remove('drag-over');"
+                       ondrop="onDropStore(event, 'sd', '${st.id}');this.classList.remove('drag-over');"
+                       onclick="tapMatchStore('sd', '${st.id}')"
+                       onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();tapMatchStore('sd','${st.id}');}">
+                    <div style="display:flex;align-items:center;gap:var(--space-sm);">
+                      ${getStoreSvg(st.id, 54)}
+                      <div>
+                        <strong>${st.label}</strong>
+                        <div class="muted" style="font-size:0.85rem;">
+                          ${matched ? `Matched: ${matched.label}` : `Drop or tap here`}
+                        </div>
+                      </div>
+                    </div>
+                    ${msg ? `<span class="badge ${msg === `Correct!` ? `badge-positive` : ``}">${msg}</span>` : ``}
+                  </div>
+                `;
+              }).join(``)}
+            </div>
+          </div>
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="checkSdMatch()">Check My Answers</button>
+            <button type="button" class="btn btn-ghost" onclick="resetSdMatch()">Reset</button>
+          </div>
+          ${showCheck ? `
+            <div class="feedback-box ${score === 6 ? `ok` : `warn`}">
+              <span>${score === 6 ? `Great job! All 6 products matched perfectly!` : `Score: ${score} / 6. Try fixing the red boxes!`}</span>
+            </div>
+          ` : ``}
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderSd3() {
+      let score = 0;
+      SD_SENTENCES.forEach(s => {
+        if ((appState.sdSentInputs[s.id] || ``).trim().toLowerCase() === s.answer.toLowerCase()) score += 1;
+      });
+      const showCheck = appState.sdSentChecked || appState.reviewMode;
+
+      return `
+        <section class="card card-grape">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part B · Elementary School Worksheet (SD)</p>
+              <h2>Activity 3: Complete the <em>Sentences!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="pen-line" aria-hidden="true"></i>
+                <span>Fill in each blank by typing or tapping a store from the Word Bank!</span>
+              </div>
+            </div>
+            <span class="badge badge-grape">${showCheck ? `Score: ${score} / 6` : `6 Sentences`}</span>
+          </div>
+
+          <div class="word-bank">
+            <strong>Word Bank:</strong>
+            ${SD_STORES_BANK.map(w => `
+              <button type="button" class="word-chip" onclick="fillSd3Word('${w}')">${w}</button>
+            `).join(``)}
+          </div>
+
+          <div class="sentence-list">
+            ${SD_SENTENCES.map((s, idx) => {
+              const val = appState.sdSentInputs[s.id] || ``;
+              const isOk = val.trim().toLowerCase() === s.answer.toLowerCase();
+              const cls = showCheck ? (isOk ? `is-correct` : `is-wrong`) : ``;
+              return `
+                <div class="sentence-row">
+                  <div class="field">
+                    <label for="sd3-${s.id}">Sentence ${idx + 1}</label>
+                    <div class="sentence-inline">
+                      <span>${idx + 1}. ${s.before}</span>
+                      <input id="sd3-${s.id}" class="pill-input blank-input ${cls}" type="text" value="${escapeHtml(val)}"
+                             onfocus="appState.sdSentActiveBlank='${s.id}'"
+                             oninput="updateSd3Input('${s.id}', this.value)"
+                             placeholder="Store name">
+                      <span>${s.after}</span>
+                    </div>
+                  </div>
+                  ${showCheck ? `
+                    <div class="muted" style="font-size:0.9rem;">
+                      <strong style="color:${isOk ? `var(--positive)` : `var(--error)`};">${isOk ? `Correct!` : `Correct answer: ${s.answer}.`}</strong>
+                      ${s.explain}
+                    </div>
+                  ` : ``}
+                </div>
+              `;
+            }).join(``)}
+          </div>
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="checkSd3()">Check Answers</button>
+          </div>
+          ${showCheck ? `
+            <div class="feedback-box ${score === 6 ? `ok` : `warn`}">
+              <span>${score === 6 ? `Excellent! All 6 sentences are complete and correct!` : `You got ${score} / 6 right. Read the explanations above to check!`}</span>
+            </div>
+          ` : ``}
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderSd4() {
+      let score = 0;
+      SD_READING_QUESTIONS.forEach(q => {
+        if (appState.sdReadAnswers[q.id] === q.answer) score += 1;
+      });
+      const showCheck = appState.sdReadChecked || appState.reviewMode;
+
+      return `
+        <section class="card">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part B · Elementary School Worksheet (SD)</p>
+              <h2>Activity 4: Reading <em>Comprehension</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="book-open" aria-hidden="true"></i>
+                <span>Read the story carefully, then choose the best answer for each question.</span>
+              </div>
+            </div>
+            <span class="badge">${showCheck ? `Score: ${score} / 5` : `5 Questions`}</span>
+          </div>
+
+          <article class="reading-card">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-sm);">
+              <h3>A Day at the Shopping Center</h3>
+              <button type="button" class="btn btn-soft btn-sm" onclick="readPassageAloud()">
+                <i data-lucide="volume-2" aria-hidden="true"></i>
+                <span>Read Story Aloud</span>
+              </button>
+            </div>
+            <p class="reading-text">${SD_READING_PASSAGE}</p>
+          </article>
+
+          <div class="mcq-list">
+            ${SD_READING_QUESTIONS.map(q => {
+              const picked = appState.sdReadAnswers[q.id];
+              return `
+                <div class="mcq-card">
+                  <h3>${q.q}</h3>
+                  <div class="mcq-options">
+                    ${q.options.map((opt, oIdx) => {
+                      let cls = picked === oIdx ? `selected` : ``;
+                      if (showCheck) {
+                        if (oIdx === q.answer) cls = `correct`;
+                        else if (picked === oIdx) cls = `wrong`;
+                      }
+                      const letter = [`a`, `b`, `c`, `d`][oIdx];
+                      return `
+                        <button type="button" class="mcq-btn ${cls}" onclick="pickSdRead('${q.id}', ${oIdx})">
+                          <strong>${letter}.</strong> ${opt}
+                        </button>
+                      `;
+                    }).join(``)}
+                  </div>
+                </div>
+              `;
+            }).join(``)}
+          </div>
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="checkSd4()">Submit Answers</button>
+          </div>
+          ${showCheck ? `
+            <div class="feedback-box ${score === 5 ? `ok` : `warn`}">
+              <span>${score === 5 ? `Amazing reading! You answered all 5 questions correctly!` : `You scored ${score} / 5. Green highlights show the right answers!`}</span>
+            </div>
+          ` : ``}
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderSd5() {
+      let score = 0;
+      SD_ARRANGE.forEach(a => {
+        const picked = (appState.sdArrangePicked[a.id] || []).map(idx => a.tiles[idx]).join(` `);
+        if (picked === a.answer) score += 1;
+      });
+      const showCheck = appState.sdArrangeChecked || appState.reviewMode;
+
+      return `
+        <section class="card card-sky">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part B · Elementary School Worksheet (SD)</p>
+              <h2>Activity 5: Arrange the <em>Words!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="arrow-up-down" aria-hidden="true"></i>
+                <span>Tap the scrambled word tiles in the right order to build each sentence!</span>
+              </div>
+            </div>
+            <span class="badge">${showCheck ? `Score: ${score} / 5` : `5 Sentences`}</span>
+          </div>
+
+          <div class="sentence-list">
+            ${SD_ARRANGE.map((item, idx) => {
+              const pickedIdxs = appState.sdArrangePicked[item.id] || [];
+              const built = pickedIdxs.map(i => item.tiles[i]).join(` `);
+              const isOk = built === item.answer;
+              const trayCls = showCheck ? (isOk ? `is-correct` : `is-wrong`) : ``;
+              return `
+                <div class="arrange-card">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:var(--space-sm);">
+                    <strong>Sentence ${idx + 1}</strong>
+                    <button type="button" class="btn btn-ghost btn-sm" onclick="clearArrange('${item.id}')">Clear</button>
+                  </div>
+
+                  <div class="arrange-tray ${trayCls}">
+                    ${pickedIdxs.length === 0 ? `<span class="muted">Tap word tiles below to build your sentence…</span>` : pickedIdxs.map((tileIdx, pos) => `
+                      <button type="button" class="word-chip selected" onclick="removeArrangeTile('${item.id}', ${pos})">${item.tiles[tileIdx]}</button>
+                    `).join(``)}
+                  </div>
+
+                  <div class="tile-pool">
+                    ${item.tiles.map((word, tIdx) => {
+                      const used = pickedIdxs.includes(tIdx);
+                      return `
+                        <button type="button" class="word-chip" ${used ? `disabled` : ``} onclick="addArrangeTile('${item.id}', ${tIdx})">${word}</button>
+                      `;
+                    }).join(``)}
+                  </div>
+
+                  ${showCheck ? `
+                    <div class="muted" style="font-size:0.9rem;">
+                      <strong style="color:${isOk ? `var(--positive)` : `var(--error)`};">${isOk ? `Great job! Correct sentence!` : `Correct sentence: ${item.answer}`}</strong>
+                    </div>
+                  ` : ``}
+                </div>
+              `;
+            }).join(``)}
+          </div>
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="checkSd5()">Check Sentences</button>
+          </div>
+          ${showCheck ? `
+            <div class="feedback-box ${score === 5 ? `ok` : `warn`}">
+              <span>${score === 5 ? `Super! All 5 sentences are grammatically correct!` : `You got ${score} / 5 sentences right. Tap a tile in the box to remove it and try again!`}</span>
+            </div>
+          ` : ``}
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderSd6() {
+      const b1 = appState.sdDialogueBlanks.b1;
+      const b2 = appState.sdDialogueBlanks.b2;
+      const showCheck = appState.sdDialogueChecked || appState.reviewMode;
+      let score = 0;
+      if (b1 === `Good morning!`) score += 1;
+      if (b2 === `Thank you.`) score += 1;
+
+      return `
+        <section class="card card-grape card-wrapper">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part B · Elementary School Worksheet (SD)</p>
+              <h2>Activity 6: Shopping <em>Conversation!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="messages-square" aria-hidden="true"></i>
+                <span>At the Bakery: Tap a blank space, then tap the matching expression from the Word Bank.</span>
+              </div>
+            </div>
+            <span class="badge badge-grape">${showCheck ? `Score: ${score} / 2` : `At the Bakery`}</span>
+          </div>
+
+          <div class="word-bank">
+            <strong>Word Bank:</strong>
+            ${SD_DIALOGUE_BANK.map(expr => `
+              <button type="button" class="word-chip" onclick="fillSd6Blank('${expr}')">${expr}</button>
+            `).join(``)}
+          </div>
+
+          <div class="dialogue-stage">
+            <div class="card" style="display:grid;justify-items:center;gap:var(--space-md);text-align:center;">
+              <div style="display:flex;gap:var(--space-md);align-items:center;">
+                <div>
+                  ${getCharacterSvg(`shopkeeper`, 84)}
+                  <div class="kicker">Shopkeeper</div>
+                </div>
+                <div>
+                  ${getCharacterSvg(`customer`, 84)}
+                  <div class="kicker">Customer</div>
+                </div>
+              </div>
+              ${getProductSvg(`donut`, 76)}
+              <button type="button" class="btn btn-secondary btn-sm" onclick="practiceDialogueAloud()">
+                <i data-lucide="volume-2" aria-hidden="true"></i>
+                <span>Practice Reading Aloud</span>
+              </button>
+            </div>
+
+            <div class="dialogue-lines">
+              <div class="dialogue-line shopkeeper ${activeDialogueLine === 0 ? `speaking-now` : ``}">
+                <span class="kicker">Shopkeeper</span>
+                <strong>Good morning! Can I help you?</strong>
+              </div>
+              <div class="dialogue-line customer ${activeDialogueLine === 1 ? `speaking-now` : ``}">
+                <span class="kicker">Customer</span>
+                <div>
+                  <button type="button" class="blank-slot-btn ${b1 ? `filled` : ``}" onclick="appState.sdDialogueActiveSlot='b1';renderApp();">
+                    ${b1 || `[ Tap to fill Blank 1 ]`}
+                  </button>
+                  ${showCheck ? `<span class="badge ${b1 === `Good morning!` ? `badge-positive` : ``}" style="margin-left:8px;">${b1 === `Good morning!` ? `Correct!` : `Answer: Good morning!`}</span>` : ``}
+                </div>
+              </div>
+              <div class="dialogue-line shopkeeper ${activeDialogueLine === 2 ? `speaking-now` : ``}">
+                <span class="kicker">Shopkeeper</span>
+                <strong>What do you want?</strong>
+              </div>
+              <div class="dialogue-line customer ${activeDialogueLine === 3 ? `speaking-now` : ``}">
+                <span class="kicker">Customer</span>
+                <strong>I want two donuts, please.</strong>
+              </div>
+              <div class="dialogue-line shopkeeper ${activeDialogueLine === 4 ? `speaking-now` : ``}">
+                <span class="kicker">Shopkeeper</span>
+                <strong>Here you are.</strong>
+              </div>
+              <div class="dialogue-line customer ${activeDialogueLine === 5 ? `speaking-now` : ``}">
+                <span class="kicker">Customer</span>
+                <div>
+                  <button type="button" class="blank-slot-btn ${b2 ? `filled` : ``}" onclick="appState.sdDialogueActiveSlot='b2';renderApp();">
+                    ${b2 || `[ Tap to fill Blank 2 ]`}
+                  </button>
+                  ${showCheck ? `<span class="badge ${b2 === `Thank you.` ? `badge-positive` : ``}" style="margin-left:8px;">${b2 === `Thank you.` ? `Correct!` : `Answer: Thank you.`}</span>` : ``}
+                </div>
+              </div>
+              <div class="dialogue-line shopkeeper ${activeDialogueLine === 6 ? `speaking-now` : ``}">
+                <span class="kicker">Shopkeeper</span>
+                <strong>You're welcome!</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="checkSd6()">Check Conversation</button>
+          </div>
+          ${showCheck ? `
+            <div class="feedback-box ${score === 2 ? `ok` : `warn`}">
+              <span>${score === 2 ? `Polite and perfect! Great shopping conversation!` : `Check the blanks above and try again!`}</span>
+            </div>
+          ` : ``}
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    function renderSd7() {
+      return `
+        <section class="card">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part B · Elementary School Worksheet (SD)</p>
+              <h2>Activity 7: My Shopping <em>List!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="clipboard-list" aria-hidden="true"></i>
+                <span>Choose or type one product from each store, then write three sentences!</span>
+              </div>
+            </div>
+            ${getShoppingListSvg(76)}
+          </div>
+
+          <div class="list-builder-grid">
+            ${SD_SHOPPING_CATS.map(cat => {
+              const val = appState.sdListCats[cat.id] || ``;
+              return `
+                <div class="list-cat-card">
+                  <div style="display:flex;align-items:center;gap:var(--space-sm);">
+                    ${getStoreSvg(cat.id, 52)}
+                    <strong>${cat.label}</strong>
+                  </div>
+                  <div class="mini-chips">
+                    ${cat.presets.map(item => `
+                      <button type="button" class="mini-chip ${val === item ? `active` : ``}" onclick="pickListCat('${cat.id}', '${item}')">${item}</button>
+                    `).join(``)}
+                  </div>
+                  <div class="field">
+                    <label for="list-${cat.id}">Product from ${cat.label}</label>
+                    <input id="list-${cat.id}" class="pill-input" type="text" value="${escapeHtml(val)}"
+                           oninput="updateListCat('${cat.id}', this.value)"
+                           placeholder="Type or tap above">
+                  </div>
+                </div>
+              `;
+            }).join(``)}
+          </div>
+
+          <div class="sentence-list">
+            <div class="sentence-row">
+              <div class="field">
+                <label for="sd7-s1">Sentence 1: I want to buy __________.</label>
+                <input id="sd7-s1" class="pill-input" type="text" value="${escapeHtml(appState.sdListSentences.s1)}"
+                       oninput="updateListSent('s1', this.value)" placeholder="e.g., chocolate cake and milk">
+              </div>
+            </div>
+            <div class="sentence-row">
+              <div class="field">
+                <label for="sd7-s2">Sentence 2: I want to visit __________.</label>
+                <input id="sd7-s2" class="pill-input" type="text" value="${escapeHtml(appState.sdListSentences.s2)}"
+                       oninput="updateListSent('s2', this.value)" placeholder="e.g., the bakery and the bookstore">
+              </div>
+            </div>
+            <div class="sentence-row">
+              <div class="field">
+                <label for="sd7-s3">Sentence 3: I like shopping because __________.</label>
+                <input id="sd7-s3" class="pill-input" type="text" value="${escapeHtml(appState.sdListSentences.s3)}"
+                       oninput="updateListSent('s3', this.value)" placeholder="e.g., it is fun to buy yummy food">
+              </div>
+            </div>
+          </div>
+
+          <div id="sd7-msg"></div>
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="saveSd7List()">Save My Shopping List</button>
+          </div>
+
+          ${appState.sdListSaved ? `
+            <div class="feedback-box ok" style="display:grid;gap:var(--space-xs);">
+              <div><strong>Shopping List Saved! Great writing!</strong></div>
+              <div><strong>My List:</strong> Bakery (${escapeHtml(appState.sdListCats.bakery)}), Bookstore (${escapeHtml(appState.sdListCats.bookstore)}), Toy Store (${escapeHtml(appState.sdListCats.toystore)}), Supermarket (${escapeHtml(appState.sdListCats.supermarket)})</div>
+              <div>1. I want to buy <em>${escapeHtml(appState.sdListSentences.s1)}</em>.</div>
+              <div>2. I want to visit <em>${escapeHtml(appState.sdListSentences.s2)}</em>.</div>
+              <div>3. I like shopping because <em>${escapeHtml(appState.sdListSentences.s3)}</em>.</div>
+            </div>
+          ` : ``}
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    /* ---------- PART C: MINI SHOPPING CHALLENGE ---------- */
+    function renderPartC() {
+      const storeObj = PART_C_STORES.find(s => s.id === appState.partCStore) || PART_C_STORES[0];
+      const role = appState.partCRole;
+
+      return `
+        <section class="card card-sky">
+          <div class="activity-header">
+            <div class="activity-title-group">
+              <p class="kicker">Part C · Mini Shopping Challenge</p>
+              <h2>Be a <em>Shopkeeper!</em></h2>
+              <div class="instruction-banner">
+                <i data-lucide="sparkles" aria-hidden="true"></i>
+                <span>Pick a store, pick your role, tap products to shop, and practice the conversation!</span>
+              </div>
+            </div>
+            <span class="badge ${appState.partCDone ? `badge-positive` : `badge-grape`}">
+              ${appState.partCDone ? `Challenge Completed!` : `Roleplay Practice`}
+            </span>
+          </div>
+
+          <div class="store-tabs" role="group" aria-label="Choose Store">
+            ${PART_C_STORES.map(st => `
+              <button type="button" class="btn btn-sm ${appState.partCStore === st.id ? `btn-primary` : `btn-soft`}" onclick="setPartCStore('${st.id}')">
+                ${st.label}
+              </button>
+            `).join(``)}
+          </div>
+
+          <div class="sim-layout">
+            <div class="card" style="box-shadow:var(--shadow-grape);">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-sm);margin-bottom:var(--space-md);">
+                <div style="display:flex;align-items:center;gap:var(--space-sm);">
+                  ${getStoreSvg(storeObj.id, 64)}
+                  <div>
+                    <h3>${storeObj.label}</h3>
+                    <p class="muted" style="font-size:0.85rem;">Tap products to add to basket</p>
+                  </div>
+                </div>
+                <span class="badge badge-sky">Basket: ${appState.partCSelectedProducts.length}</span>
+              </div>
+
+              <div class="shelf-grid">
+                ${storeObj.products.map(p => {
+                  const inBasket = appState.partCSelectedProducts.includes(p.label);
+                  return `
+                    <button type="button" class="product-tile ${inBasket ? `in-basket` : ``}" onclick="togglePartCProduct('${p.label}')">
+                      ${getProductSvg(p.id, 68)}
+                      <strong>${p.label}</strong>
+                      <span class="kicker">${inBasket ? `In Basket` : `Tap to Pick`}</span>
+                    </button>
+                  `;
+                }).join(``)}
+              </div>
+
+              ${appState.partCSelectedProducts.length > 0 ? `
+                <div class="feedback-box ok" style="margin-top:var(--space-md);">
+                  <i data-lucide="shopping-basket" aria-hidden="true"></i>
+                  <span>Shopping Basket: ${appState.partCSelectedProducts.join(`, `)}</span>
+                </div>
+              ` : ``}
+            </div>
+
+            <div class="card" style="display:grid;gap:var(--space-md);">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-sm);">
+                <div style="display:flex;align-items:center;gap:var(--space-sm);">
+                  ${getCharacterSvg(role, 56)}
+                  <div>
+                    <span class="kicker">Your Role</span>
+                    <h3>${role === `shopkeeper` ? `Shopkeeper` : `Customer`}</h3>
+                  </div>
+                </div>
+                <div class="level-pill-switch">
+                  <button type="button" class="level-switch-btn ${role === `shopkeeper` ? `active` : ``}" onclick="setPartCRole('shopkeeper')">Shopkeeper</button>
+                  <button type="button" class="level-switch-btn ${role === `customer` ? `active` : ``}" onclick="setPartCRole('customer')">Customer</button>
+                </div>
+              </div>
+
+              <div class="chat-log" id="partc-chat-log">
+                ${appState.partCChat.length === 0 ? `
+                  <p class="muted">Tap any conversation prompt below to start talking with your partner!</p>
+                ` : appState.partCChat.map(line => `
+                  <div class="bubble ${line.who === `shopkeeper` ? `bubble-teacher` : `bubble-student`}">
+                    <strong>${line.who === `shopkeeper` ? `Shopkeeper` : `Customer`}:</strong> ${escapeHtml(line.text)}
+                  </div>
+                `).join(``)}
+              </div>
+
+              <div class="prompt-group">
+                <span class="kicker">Shopkeeper Expressions</span>
+                <div class="prompt-row">
+                  ${PART_C_EXPRESSIONS.shopkeeper.map(expr => `
+                    <button type="button" class="word-chip" onclick="sendPartCLine('shopkeeper', '${expr}')">${expr}</button>
+                  `).join(``)}
+                </div>
+              </div>
+
+              <div class="prompt-group">
+                <span class="kicker">Customer Expressions</span>
+                <div class="prompt-row">
+                  ${PART_C_EXPRESSIONS.customer.map(expr => `
+                    <button type="button" class="word-chip" onclick="sendPartCLine('customer', '${expr}')">${expr}</button>
+                  `).join(``)}
+                  ${appState.partCSelectedProducts.length > 0 ? `
+                    <button type="button" class="word-chip selected" onclick="sendPartCLine('customer', 'I want ${appState.partCSelectedProducts[appState.partCSelectedProducts.length - 1].toLowerCase()}, please.')">
+                      I want ${appState.partCSelectedProducts[appState.partCSelectedProducts.length - 1].toLowerCase()}, please.
+                    </button>
+                  ` : ``}
+                </div>
+              </div>
+
+              <div style="display:flex;gap:var(--space-sm);flex-wrap:wrap;">
+                <button type="button" class="btn btn-positive btn-sm" onclick="completePartC()">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Finish Roleplay</span>
+                </button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="clearPartCChat()">Clear Chat</button>
+              </div>
+            </div>
+          </div>
+          ${renderStageFooter()}
+        </section>
+      `;
+    }
+
+    /* ---------- FINAL RESULTS & SCORE ---------- */
+    function renderResults() {
+      const metrics = computeMetrics();
+      const scorePct = metrics.totalMax ? Math.round((metrics.totalCorrect / metrics.totalMax) * 100) : 0;
+      let feedback = `Good effort! Try again!`;
+      if (scorePct >= 80) feedback = `Excellent! You're a shopping star!`;
+      else if (scorePct >= 50) feedback = `Great job! Keep learning!`;
+
+      const nameDisplay = appState.studentName.trim() ? appState.studentName.trim() : `Little Shopper`;
+      const levelDisplay = appState.level === `tk` ? `Kindergarten (TK)` : `Elementary School (SD)`;
+
+      return `
+        <section class="hero-panel">
+          <p class="kicker">Worksheet Summary</p>
+          <h2 class="display">Final Results for <em>${escapeHtml(nameDisplay)}</em></h2>
+          <p class="muted" style="margin-top:var(--space-xs);font-size:1.05rem;">
+            Learning Level: <strong>${levelDisplay}</strong>${appState.studentClass.trim() ? ` · Class ${escapeHtml(appState.studentClass)}` : ``}
+          </p>
+
+          <div class="results-hero">
+            <div class="metric-tile">
+              <span class="kicker">Activities Completed</span>
+              <span class="metric-value">${metrics.completedCount} / ${metrics.totalActivities}</span>
+              <span class="muted">Sections finished</span>
+            </div>
+            <div class="metric-tile">
+              <span class="kicker">Total Correct Answers</span>
+              <span class="metric-value">${metrics.totalCorrect} / ${metrics.totalMax}</span>
+              <span class="muted">Points earned</span>
+            </div>
+            <div class="metric-tile">
+              <span class="kicker">Final Score</span>
+              <span class="metric-value">${scorePct}%</span>
+              <span class="muted">Overall mastery</span>
+            </div>
+          </div>
+
+          <div class="feedback-box ${scorePct >= 50 ? `ok` : `warn`}" style="font-size:1.15rem;">
+            <i data-lucide="trophy" aria-hidden="true"></i>
+            <span>${feedback}</span>
+          </div>
+
+          <h3 style="margin-top:var(--space-xl);margin-bottom:var(--space-md);">Activity Breakdown</h3>
+          <div class="breakdown-list">
+            ${metrics.activities.map(a => `
+              <div class="breakdown-row">
+                <div>
+                  <strong>${a.title}</strong>
+                  <div class="muted" style="font-size:0.875rem;">Score: ${a.score} / ${a.max}</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:var(--space-sm);">
+                  <span class="badge ${a.done ? `badge-positive` : ``}">${a.done ? `Completed` : `In Progress`}</span>
+                  <button type="button" class="btn btn-soft btn-sm" onclick="goToView('${a.id}')">Open</button>
+                </div>
+              </div>
+            `).join(``)}
+          </div>
+
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="reviewMyAnswers()">
+              <i data-lucide="eye" aria-hidden="true"></i>
+              <span>Review My Answers</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="start-again-btn" onclick="startAgain(this)">
+              <i data-lucide="rotate-ccw" aria-hidden="true"></i>
+              <span>Start Again</span>
+            </button>
+          </div>
+        </section>
+      `;
+    }
+
+    /* ======================================================================
+       7. HOISTED EVENT HANDLERS
+       ====================================================================== */
+    function escapeHtml(str) {
+      return String(str || ``)
+        .replace(/&/g, `&amp;`)
+        .replace(/</g, `&lt;`)
+        .replace(/>/g, `&gt;`)
+        .replace(/"/g, `&quot;`)
+        .replace(/'/g, `&#39;`);
+    }
+
+    function getStoreLabel(id) {
+      const all = TK_MATCH_STORES.concat(SD_MATCH_STORES);
+      const found = all.find(s => s.id === id);
+      return found ? found.label : id;
+    }
+
+    function goToView(viewId) {
+      appState.view = viewId;
+      selectedMatchSource = null;
+      persistState();
+      renderApp();
+      window.scrollTo({ top: 0, behavior: `smooth` });
+    }
+
+    function updateStudentInfo(field, value) {
+      appState[field] = value;
+      persistState();
+      renderShell();
+    }
+
+    function selectLevel(level, jumpToFirst) {
+      appState.level = level;
+      appState.reviewMode = false;
+      if (jumpToFirst) {
+        appState.view = level === `tk` ? `tk1` : `sd1`;
+      } else if (appState.view !== `welcome` && appState.view !== `partc` && appState.view !== `results`) {
+        appState.view = level === `tk` ? `tk1` : `sd1`;
+      }
+      persistState();
+      renderApp();
+    }
+
+    function toggleSound() {
+      appState.soundOn = !appState.soundOn;
+      persistState();
+      renderShell();
+    }
+
+    /* TK Activity 1 */
+    function sayVocabWord(id) {
+      const item = TK_VOCAB.find(v => v.id === id);
+      if (!item) return;
+      if (!appState.tkVocabClicked.includes(id)) {
+        appState.tkVocabClicked.push(id);
+      }
+      speakText(item.word);
+      playChime(true);
+      persistState();
+      renderApp();
+    }
+
+    /* Matching (TK2 & SD2) */
+    function onDragProduct(ev, prodId) {
+      draggedProductId = prodId;
+      if (ev && ev.dataTransfer) {
+        ev.dataTransfer.setData(`text/plain`, prodId);
+      }
+    }
+
+    function onDropStore(ev, track, storeId) {
+      ev.preventDefault();
+      const prodId = (ev.dataTransfer && ev.dataTransfer.getData(`text/plain`)) || draggedProductId;
+      if (!prodId) return;
+      assignMatchPair(track, prodId, storeId);
+      draggedProductId = null;
+    }
+
+    function tapMatchProduct(track, prodId) {
+      selectedMatchSource = selectedMatchSource === prodId ? null : prodId;
+      renderApp();
+    }
+
+    function tapMatchStore(track, storeId) {
+      if (!selectedMatchSource) return;
+      assignMatchPair(track, selectedMatchSource, storeId);
+      selectedMatchSource = null;
+    }
+
+    function assignMatchPair(track, prodId, storeId) {
+      const pairs = track === `tk` ? appState.tkMatchPairs : appState.sdMatchPairs;
+      Object.keys(pairs).forEach(k => {
+        if (pairs[k] === storeId) delete pairs[k];
+      });
+      pairs[prodId] = storeId;
+      if (track === `tk`) appState.tkMatchChecked = false;
+      else appState.sdMatchChecked = false;
+      playChime(true);
+      persistState();
+      renderApp();
+    }
+
+    function checkTkMatch() {
+      appState.tkMatchChecked = true;
+      let ok = 0;
+      TK_MATCH_PRODUCTS.forEach(p => { if (appState.tkMatchPairs[p.id] === p.correctStore) ok += 1; });
+      playChime(ok === 4);
+      persistState();
+      renderApp();
+    }
+
+    function showTkMatchAnswers() {
+      TK_MATCH_PRODUCTS.forEach(p => { appState.tkMatchPairs[p.id] = p.correctStore; });
+      appState.tkMatchChecked = true;
+      persistState();
+      renderApp();
+    }
+
+    function resetTkMatch() {
+      appState.tkMatchPairs = {};
+      appState.tkMatchChecked = false;
+      selectedMatchSource = null;
+      persistState();
+      renderApp();
+    }
+
+    /* TK Activity 3 */
+    function pickTkQuiz(qId, optId) {
+      appState.tkQuizAnswers[qId] = optId;
+      appState.tkQuizChecked = true;
+      const q = TK_QUIZ.find(item => item.id === qId);
+      playChime(q && q.answer === optId);
+      persistState();
+      renderApp();
+    }
+
+    function submitTkQuiz() {
+      appState.tkQuizChecked = true;
+      persistState();
+      renderApp();
+    }
+
+    /* TK Activity 4 */
+    function selectBrush(colorId) {
+      appState.tkColorBrush = colorId;
+      persistState();
+      renderApp();
+    }
+
+    function colorItem(itemId) {
+      if (appState.tkColorBrush === `none`) {
+        delete appState.tkColored[itemId];
+      } else {
+        appState.tkColored[itemId] = appState.tkColorBrush;
+        const item = TK_COLOR_ITEMS.find(c => c.id === itemId);
+        playChime(item && item.targetColor === appState.tkColorBrush);
+      }
+      persistState();
+      renderApp();
+    }
+
+    /* TK Activity 5 */
+    function listenSpeakPair(id) {
+      const pair = TK_SPEAKING.find(s => s.id === id);
+      if (!pair) return;
+      speakText(`${pair.teacher} ... ${pair.student}`);
+      if (!appState.tkSpeakDone.includes(id)) {
+        appState.tkSpeakDone.push(id);
+        persistState();
+        renderApp();
+      }
+    }
+
+    function toggleSpeakDone(id) {
+      if (appState.tkSpeakDone.includes(id)) {
+        appState.tkSpeakDone = appState.tkSpeakDone.filter(x => x !== id);
+      } else {
+        appState.tkSpeakDone.push(id);
+        playChime(true);
+      }
+      persistState();
+      renderApp();
+    }
+
+    /* SD Activity 1 */
+    function updateSd1Input(id, val) {
+      appState.sdAct1Inputs[id] = val;
+      appState.sdAct1Checked = false;
+      persistState();
+    }
+
+    function fillSd1Word(word) {
+      const target = appState.sdAct1ActiveBlank || `bakery`;
+      appState.sdAct1Inputs[target] = word;
+      const nextIdx = SD_ACT1_STORES.findIndex(s => s.id === target) + 1;
+      if (nextIdx < SD_ACT1_STORES.length) {
+        appState.sdAct1ActiveBlank = SD_ACT1_STORES[nextIdx].id;
+      }
+      appState.sdAct1Checked = false;
+      persistState();
+      renderApp();
+    }
+
+    function checkSd1() {
+      appState.sdAct1Checked = true;
+      let score = 0;
+      SD_ACT1_STORES.forEach(s => {
+        if ((appState.sdAct1Inputs[s.id] || ``).trim().toLowerCase() === s.answer.toLowerCase()) score += 1;
+      });
+      playChime(score === 6);
+      persistState();
+      renderApp();
+    }
+
+    /* SD Activity 2 */
+    function checkSdMatch() {
+      appState.sdMatchChecked = true;
+      let score = 0;
+      SD_MATCH_PRODUCTS.forEach(p => { if (appState.sdMatchPairs[p.id] === p.correctStore) score += 1; });
+      playChime(score === 6);
+      persistState();
+      renderApp();
+    }
+
+    function resetSdMatch() {
+      appState.sdMatchPairs = {};
+      appState.sdMatchChecked = false;
+      selectedMatchSource = null;
+      persistState();
+      renderApp();
+    }
+
+    /* SD Activity 3 */
+    function updateSd3Input(id, val) {
+      appState.sdSentInputs[id] = val;
+      appState.sdSentChecked = false;
+      persistState();
+    }
+
+    function fillSd3Word(word) {
+      const target = appState.sdSentActiveBlank || `st1`;
+      appState.sdSentInputs[target] = word;
+      const nextIdx = SD_SENTENCES.findIndex(s => s.id === target) + 1;
+      if (nextIdx < SD_SENTENCES.length) {
+        appState.sdSentActiveBlank = SD_SENTENCES[nextIdx].id;
+      }
+      appState.sdSentChecked = false;
+      persistState();
+      renderApp();
+    }
+
+    function checkSd3() {
+      appState.sdSentChecked = true;
+      let score = 0;
+      SD_SENTENCES.forEach(s => {
+        if ((appState.sdSentInputs[s.id] || ``).trim().toLowerCase() === s.answer.toLowerCase()) score += 1;
+      });
+      playChime(score === 6);
+      persistState();
+      renderApp();
+    }
+
+    /* SD Activity 4 */
+    function readPassageAloud() {
+      speakText(SD_READING_PASSAGE);
+    }
+
+    function pickSdRead(qId, optIdx) {
+      appState.sdReadAnswers[qId] = optIdx;
+      appState.sdReadChecked = false;
+      persistState();
+      renderApp();
+    }
+
+    function checkSd4() {
+      appState.sdReadChecked = true;
+      let score = 0;
+      SD_READING_QUESTIONS.forEach(q => { if (appState.sdReadAnswers[q.id] === q.answer) score += 1; });
+      playChime(score === 5);
+      persistState();
+      renderApp();
+    }
+
+    /* SD Activity 5 */
+    function addArrangeTile(qId, tileIdx) {
+      const arr = appState.sdArrangePicked[qId] || [];
+      if (!arr.includes(tileIdx)) arr.push(tileIdx);
+      appState.sdArrangePicked[qId] = arr;
+      appState.sdArrangeChecked = false;
+      persistState();
+      renderApp();
+    }
+
+    function removeArrangeTile(qId, pos) {
+      const arr = appState.sdArrangePicked[qId] || [];
+      arr.splice(pos, 1);
+      appState.sdArrangePicked[qId] = arr;
+      appState.sdArrangeChecked = false;
+      persistState();
+      renderApp();
+    }
+
+    function clearArrange(qId) {
+      appState.sdArrangePicked[qId] = [];
+      appState.sdArrangeChecked = false;
+      persistState();
+      renderApp();
+    }
+
+    function checkSd5() {
+      appState.sdArrangeChecked = true;
+      let score = 0;
+      SD_ARRANGE.forEach(a => {
+        const picked = (appState.sdArrangePicked[a.id] || []).map(idx => a.tiles[idx]).join(` `);
+        if (picked === a.answer) score += 1;
+      });
+      playChime(score === 5);
+      persistState();
+      renderApp();
+    }
+
+    /* SD Activity 6 */
+    function fillSd6Blank(expr) {
+      const slot = appState.sdDialogueActiveSlot || `b1`;
+      appState.sdDialogueBlanks[slot] = expr;
+      appState.sdDialogueActiveSlot = slot === `b1` ? `b2` : `b1`;
+      appState.sdDialogueChecked = false;
+      persistState();
+      renderApp();
+    }
+
+    function checkSd6() {
+      appState.sdDialogueChecked = true;
+      const ok = appState.sdDialogueBlanks.b1 === `Good morning!` && appState.sdDialogueBlanks.b2 === `Thank you.`;
+      playChime(ok);
+      persistState();
+      renderApp();
+    }
+
+    function practiceDialogueAloud() {
+      clearInterval(activeSpeechTimer);
+      const lines = [
+        `Good morning! Can I help you?`,
+        appState.sdDialogueBlanks.b1 || `Good morning!`,
+        `What do you want?`,
+        `I want two donuts, please.`,
+        `Here you are.`,
+        appState.sdDialogueBlanks.b2 || `Thank you.`,
+        `You're welcome!`
+      ];
+      let step = 0;
+      activeDialogueLine = 0;
+      speakText(lines[0]);
+      renderApp();
+      activeSpeechTimer = setInterval(() => {
+        step += 1;
+        if (step >= lines.length) {
+          clearInterval(activeSpeechTimer);
+          activeDialogueLine = -1;
+          renderApp();
+          return;
+        }
+        activeDialogueLine = step;
+        speakText(lines[step]);
+        renderApp();
+      }, 1700);
+    }
+
+    /* SD Activity 7 */
+    function pickListCat(catId, item) {
+      appState.sdListCats[catId] = item;
+      appState.sdListSaved = false;
+      persistState();
+      renderApp();
+    }
+
+    function updateListCat(catId, val) {
+      appState.sdListCats[catId] = val;
+      appState.sdListSaved = false;
+      persistState();
+    }
+
+    function updateListSent(key, val) {
+      appState.sdListSentences[key] = val;
+      appState.sdListSaved = false;
+      persistState();
+    }
+
+    function saveSd7List() {
+      const catsOk = Object.values(appState.sdListCats).every(v => v.trim().length > 0);
+      const sentsOk = Object.values(appState.sdListSentences).every(v => v.trim().length > 0);
+      const msgEl = document.getElementById(`sd7-msg`);
+      if (!catsOk || !sentsOk) {
+        if (msgEl) {
+          msgEl.innerHTML = `<div class="feedback-box warn"><span>Please choose or type one item for all 4 stores and complete all 3 sentences before saving!</span></div>`;
+        }
+        playChime(false);
+        return;
+      }
+      appState.sdListSaved = true;
+      playChime(true);
+      persistState();
+      renderApp();
+    }
+
+    /* Part C */
+    function setPartCStore(storeId) {
+      appState.partCStore = storeId;
+      persistState();
+      renderApp();
+    }
+
+    function setPartCRole(role) {
+      appState.partCRole = role;
+      persistState();
+      renderApp();
+    }
+
+    function togglePartCProduct(label) {
+      if (appState.partCSelectedProducts.includes(label)) {
+        appState.partCSelectedProducts = appState.partCSelectedProducts.filter(x => x !== label);
+      } else {
+        appState.partCSelectedProducts.push(label);
+        playChime(true);
+      }
+      persistState();
+      renderApp();
+    }
+
+    function sendPartCLine(who, text) {
+      appState.partCChat.push({ who, text });
+      if (appState.partCChat.length >= 2) {
+        appState.partCDone = true;
+      }
+      speakText(text);
+      persistState();
+      renderApp();
+      const log = document.getElementById(`partc-chat-log`);
+      if (log) log.scrollTop = log.scrollHeight;
+    }
+
+    function completePartC() {
+      appState.partCDone = true;
+      playChime(true);
+      persistState();
+      renderApp();
+    }
+
+    function clearPartCChat() {
+      appState.partCChat = [];
+      persistState();
+      renderApp();
+    }
+
+    /* Results Actions */
+    function reviewMyAnswers() {
+      appState.reviewMode = true;
+      appState.view = appState.level === `tk` ? `tk2` : `sd1`;
+      persistState();
+      renderApp();
+      window.scrollTo({ top: 0, behavior: `smooth` });
+    }
+
+    function startAgain(btn) {
+      if (btn && btn.dataset.armed !== `true`) {
+        btn.dataset.armed = `true`;
+        const span = btn.querySelector(`span`);
+        if (span) span.textContent = `Tap again to confirm reset`;
+        return;
+      }
+      appState = createInitialState();
+      selectedMatchSource = null;
+      persistState();
+      renderApp();
+      window.scrollTo({ top: 0, behavior: `smooth` });
+    }
+
+    /* ======================================================================
+       8. INITIALIZATION
+       ====================================================================== */
+    async function initApp() {
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.getAppState === `function`) {
+          const saved = await window.notebookAppApi.getAppState();
+          if (saved && typeof saved === `object`) {
+            appState = Object.assign(createInitialState(), saved);
+          }
+        }
+      } catch (err) {
+        /* fallback to fresh state */
+      }
+
+      renderApp();
+
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.notifyAppReady === `function`) {
+          window.notebookAppApi.notifyAppReady();
+        }
+      } catch (err) {
+        /* ignore outside host */
+      }
+    }
+
+    initApp();
+  </script>
+</body>
+</html>
+Menampilkan Let_s_Go_Shopping!_Interactive_English_Worksheet.html.
